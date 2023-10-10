@@ -8,18 +8,50 @@
     <link href="./output.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body class="bg-[#0B0C0D]">
-    <header class="container">
-        <nav class="flex justify-between items-center">
-            <a href="#" id="logo" class="bg-gray-500 w-[240px] h-[55px] rounded-[12px]">Logo</a>
-            <ul class="flex items-center justify-center">
-                <li class="text-[32px] text-white">Features</li>
-                <li class="text-[32px] text-white">About Us</li>
-                <li class="text-[32px] text-white">Tape</li>
-                <li class="text-[32px] text-white">Resources</li>
+<body class="bg-[#0B0C0D] bg-light-pattern bg-no-repeat bg-right">
+
+    <header class="container py-6">
+        <nav class="flex justify-between items-center gap-52">
+            <a href="#" id="logo" class="bg-gray-500 w-[240px] h-[55px] rounded-[12px] flex justify-center items-center">Logo</a>
+            <ul class="flex items-center justify-center gap-16">
+                <li class="text-[22px] text-white font-poppins">
+                    <a href="#" class="flex items-center gap-2">
+                    Features 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="9" viewBox="0 0 15 9" fill="none">
+                    <path d="M1 1L7.5 7L13.5 1" stroke="white" stroke-opacity="0.56" stroke-width="2"/>
+                    </svg>
+                    </a>
+                </li>
+                <li class="text-[22px] text-white font-poppins"><a href="#">About Us</a></li>
+                <li class="text-[22px] text-white font-poppins"><a href="#">Tape</a></li>
+                <li class="text-[22px] text-white font-poppins">
+                    <a href="#" class="flex items-center gap-2">
+                    Resources
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="9" viewBox="0 0 15 9" fill="none">
+                        <path d="M1 1L7.5 7L13.5 1" stroke="white" stroke-opacity="0.56" stroke-width="2"/>
+                    </svg>
+                    </a>
+                </li>
             </ul>
-            <a href="" class="bg-blue-500 w-[225px] h-[61px] rounded-[16px]">Login</a>
+            <a href="" class="bg-blue-500 w-[225px] h-[61px] rounded-[16px] flex justify-center items-center text-white text-[25px] font-poppins">Log In</a>
         </nav>
     </header>
+
+    <main class="container">
+        <section id="hero" class="flex justify-between items-center ">
+            <section id="lets_start" class="">
+                <p class="text-[64px] text-white w-[600px]">Let`s start your <span class=" bg-gradient-to-r from-[#3B82F6B2] to-[#3B82F6] text-transparent bg-clip-text">carrier</span> with <span class="bg-gradient-to-r from-[#3B82F6B2] to-[#3B82F6] text-transparent bg-clip-text">NAME</span></p>
+                <p>Lorem ispum dolor sit amet lorem ispum dolor sit amet lorem ispum dolor sit amet</p>
+                <button id="start" class="flex items-center gap-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="18" viewBox="0 0 15 18" fill="none">
+                    <path d="M3.97067e-08 0.999977V17C-5.0094e-05 17.1779 0.0473748 17.3526 0.137382 17.5061C0.227388 17.6596 0.356717 17.7863 0.512024 17.8731C0.667332 17.9599 0.842993 18.0038 1.02088 18C1.19878 17.9963 1.37245 17.9452 1.524 17.852L14.524 9.85198C14.6696 9.76251 14.7898 9.63722 14.8733 9.48806C14.9567 9.33891 15.0005 9.17087 15.0005 8.99998C15.0005 8.82908 14.9567 8.66104 14.8733 8.51189C14.7898 8.36274 14.6696 8.23745 14.524 8.14798L1.524 0.147977C1.37245 0.0547413 1.19878 0.00362895 1.02088 -8.70197e-05C0.842993 -0.00380299 0.667332 0.0400121 0.512024 0.126837C0.356717 0.213663 0.227388 0.340354 0.137382 0.49384C0.0473748 0.647325 -5.0094e-05 0.822047 3.97067e-08 0.999977Z" fill="white"/>
+                    </svg>
+                    <span>Lets Create</span>
+                </button>
+            </section>
+            <img src="./img/hero.svg" alt="hero">
+        </section>
+    </main>
+
 </body>
 </html>

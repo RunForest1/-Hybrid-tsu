@@ -3,26 +3,33 @@ module.exports = {
   content: ["./**/*.html"],
   theme: {
     container: {
-      padding: '160px',
+      padding: '20px',
       center: true
     },
     extend: {
-      blue: {
-        'primary': '#3B82F6'
+      backgroundImage: {
+        "light-pattern": "url(img/mainsvg.svg)"
       },
-      white: {
-        'primary': '#FFFFFF'
+      colors: {
+        'secondary': '#7B4AE2'
       },
-      darks: {
-        'primary': '#0B0C0D'
+      backgroundColor: {
+        'primary': '#090E16'
       },
-      lightdark: {
-        'primary': '#D9D9D933'
+      borderColor: {
+        'primary': '#57A4FF'
+      },
+      textColor: {
+        'primary': '#57A4FF'
+      },
+      gradientColorStops: {
+        'primary': '#3B82F6',
+        'secondary': '#1E40AF'
       },
       fontFamily: {
-        'euclid': ['Euclid Circular B', 'sans-serif'],
         'poppins': ['Poppins', 'sans-serif'],
-      },
+        'cabin': ['Cabin', 'sans-serif']
+      }
     },
   },
   plugins: [],
