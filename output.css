@@ -572,24 +572,49 @@ video {
   }
 }
 
+.my-6 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.mt-20 {
+  margin-top: 5rem;
+}
+
+.mt-28 {
+  margin-top: 7rem;
+}
+
+.mt-\[225px\] {
+  margin-top: 225px;
+}
+
 .flex {
   display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.h-32 {
+  height: 8rem;
 }
 
 .h-\[55px\] {
   height: 55px;
 }
 
+.h-\[60px\] {
+  height: 60px;
+}
+
 .h-\[61px\] {
   height: 61px;
 }
 
-.h-\[\] {
-  height: ;
-}
-
-.h-\[60px\] {
-  height: 60px;
+.h-\[125px\] {
+  height: 125px;
 }
 
 .w-\[225px\] {
@@ -600,28 +625,32 @@ video {
   width: 240px;
 }
 
-.w-\[600px\] {
-  width: 600px;
-}
-
-.w-\[500\] {
-  width: 500;
-}
-
 .w-\[400px\] {
   width: 400px;
-}
-
-.w-\[500px\] {
-  width: 500px;
 }
 
 .w-\[550px\] {
   width: 550px;
 }
 
+.w-\[600px\] {
+  width: 600px;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .items-center {
   align-items: center;
+}
+
+.justify-start {
+  justify-content: flex-start;
 }
 
 .justify-center {
@@ -640,37 +669,72 @@ video {
   gap: 0.5rem;
 }
 
+.gap-3 {
+  gap: 0.75rem;
+}
+
 .gap-4 {
   gap: 1rem;
+}
+
+.gap-5 {
+  gap: 1.25rem;
 }
 
 .gap-52 {
   gap: 13rem;
 }
 
-.space-x-\[\] > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc( * var(--tw-space-x-reverse));
-  margin-left: calc( * calc(1 - var(--tw-space-x-reverse)));
+.gap-7 {
+  gap: 1.75rem;
 }
 
-.space-x-\[25px\] > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(25px * var(--tw-space-x-reverse));
-  margin-left: calc(25px * calc(1 - var(--tw-space-x-reverse)));
+.space-y-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+
+.space-y-56 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(14rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(14rem * var(--tw-space-y-reverse));
+}
+
+.space-y-\[25px\] > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(25px * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(25px * var(--tw-space-y-reverse));
 }
 
 .rounded-\[12px\] {
   border-radius: 12px;
 }
 
+.rounded-\[15px\] {
+  border-radius: 15px;
+}
+
 .rounded-\[16px\] {
   border-radius: 16px;
+}
+
+.border {
+  border-width: 1px;
+}
+
+.border-gray-800 {
+  --tw-border-opacity: 1;
+  border-color: rgb(31 41 55 / var(--tw-border-opacity));
 }
 
 .bg-\[\#0B0C0D\] {
   --tw-bg-opacity: 1;
   background-color: rgb(11 12 13 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#101113CC\]\/\[0\.8\] {
+  background-color: rgb(16 17 19 / 0.8);
 }
 
 .bg-blue-500 {
@@ -681,6 +745,10 @@ video {
 .bg-gray-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(107 114 128 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#101113CC\]\/\[0\.83\] {
+  background-color: rgb(16 17 19 / 0.83);
 }
 
 .bg-gradient-to-r {
@@ -710,49 +778,57 @@ video {
   background-position: right;
 }
 
+.bg-top {
+  background-position: top;
+}
+
 .bg-no-repeat {
   background-repeat: no-repeat;
 }
 
-.py-6 {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+.pl-6 {
+  padding-left: 1.5rem;
 }
 
-.font-poppins {
-  font-family: Poppins, sans-serif;
+.pt-5 {
+  padding-top: 1.25rem;
+}
+
+.pt-9 {
+  padding-top: 2.25rem;
 }
 
 .font-Euclid {
   font-family: Euclid Circular B, sans-serif;
 }
 
-.text-\[22px\] {
-  font-size: 22px;
+.text-\[16px\] {
+  font-size: 16px;
+}
+
+.text-\[18px\] {
+  font-size: 18px;
+}
+
+.text-\[24px\] {
+  font-size: 24px;
 }
 
 .text-\[25px\] {
   font-size: 25px;
 }
 
+.text-\[56px\] {
+  font-size: 56px;
+}
+
 .text-\[64px\] {
   font-size: 64px;
 }
 
-.text-\[32px\] {
-  font-size: 32px;
-}
-
-.text-\[28px\] {
-  font-size: 28px;
-}
-
-.text-\[26px\] {
-  font-size: 26px;
-}
-
-.text-\[24px\] {
-  font-size: 24px;
+.text-blue-500 {
+  --tw-text-opacity: 1;
+  color: rgb(59 130 246 / var(--tw-text-opacity));
 }
 
 .text-transparent {
@@ -764,14 +840,6 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-white\/\[\] {
-  color: rgb(255 255 255 / );
-}
-
 .text-white\/\[0\.56\] {
   color: rgb(255 255 255 / 0.56);
-}
-
-.text-\[\] {
-  color: ;
 }
