@@ -28,7 +28,8 @@ module.exports = {
       },
       fontFamily: {
         'poppins': ['Poppins', 'sans-serif'],
-        'cabin': ['Cabin', 'sans-serif']
+        'cabin': ['Cabin', 'sans-serif'],
+        'Euclid': ['Euclid Circular B', 'sans-serif']
       }
     },
   },
