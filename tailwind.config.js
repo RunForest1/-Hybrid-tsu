@@ -8,7 +8,7 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        "light-pattern": "url(img/mainsvg.svg)"
+        "light-pattern": "url(/assets/imgs/mainsvg.svg)"
       },
       colors: {
         'secondary': '#7B4AE2'
