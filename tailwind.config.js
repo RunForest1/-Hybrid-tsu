@@ -9,7 +9,8 @@ module.exports = {
     extend: {
       backgroundImage: {
         "light-pattern": "url(/assets/imgs/mainsvg.svg)",
-        "post": "url(/assets/imgs/privatepost.png)"
+        "post": "url('/assets/imgs/post.png')",
+        "blurpost": "url('/assets/imgs/blurpost.png')",
       },
       colors: {
         'secondary': '#7B4AE2'
