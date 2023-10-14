@@ -1,7 +1,6 @@
 {
   "name": "c",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "vite",
@@ -17,5 +16,7 @@
   "dependencies": {
     "path": "^0.12.7",
     "vite": "^4.4.11"
-  }
+  },
+  "keywords": [],
+  "description": ""
 }
