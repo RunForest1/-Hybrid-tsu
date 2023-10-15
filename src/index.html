@@ -14,24 +14,81 @@
         <nav class="flex justify-between items-center gap-52">
             <a href="#" id="logo" class="bg-gray-500 w-[240px] h-[55px] rounded-[12px] flex justify-center items-center text-Euclid">Logo</a>
             <ul class="flex items-center justify-center gap-16">
-                <li class="text-[22px] text-white font-Euclid">
-                    <a href="#" class="flex items-center gap-2">
+                <section id="dropdownButton1" class="text-[22px] text-white font-Euclid">
+                    <button onclick="toggleDropdown1()" href="#" class="flex items-center gap-2">
                     Features 
-                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="9" viewBox="0 0 15 9" fill="none">
+                    <svg xmlns="http://www.w3.org/2000/svg" id="drpTarget1" class="duration-300" width="15" height="9" viewBox="0 0 15 9" fill="none">
                     <path d="M1 1L7.5 7L13.5 1" stroke="white" stroke-opacity="0.56" stroke-width="2"/>
                     </svg>
-                    </a>
-                </li>
+                    </button>
+                    <section class="hidden" id="dropdown1" class="absolute">
+                        <menu class="grid grid-cols-2 mt-2 p-6 gap-6 absolute inset-x-[435px] top-[90px] w-[1000px] h-[500px] text-white/[0.56] font-Euclid text-xl bg-neutral-950 border rounded-2xl border-gray-700">
+                            <section class="flex items-center gap-5 ">
+                                <img src="./assets/imgs/feature_icon.svg" alt="">
+                                <section class="space-y-2">
+                                    <p class="text-white font-Euclid text-[25px] font-semibold flex justify-start">Feature</p>
+                                    <p class="w-[328px] text-white/[0.56] text-xl  font-Euclid">Lorem ispum dolor sit amet lorem isput dolor sit amet</p>
+                                </section>
+                            </section>
+                            <section class="flex items-center gap-5 ">
+                                <img src="./assets/imgs/feature_icon.svg" alt="">
+                                <section class="space-y-2">
+                                    <p class="text-white font-Euclid text-[25px] font-semibold flex justify-start">Feature</p>
+                                    <p class="w-[328px] text-white/[0.56] text-xl  font-Euclid">Lorem ispum dolor sit amet lorem isput dolor sit amet</p>
+                                </section>
+                            </section>
+                            <section class="flex items-center gap-5 ">
+                                <img src="./assets/imgs/feature_icon.svg" alt="">
+                                <section class="space-y-2">
+                                    <p class="text-white font-Euclid text-[25px] font-semibold flex justify-start">Feature</p>
+                                    <p class="w-[328px] text-white/[0.56] text-xl  font-Euclid">Lorem ispum dolor sit amet lorem isput dolor sit amet</p>
+                                </section>
+                            </section>
+                            <section class="flex items-center gap-5 ">
+                                <img src="./assets/imgs/feature_icon.svg" alt="">
+                                <section class="space-y-2">
+                                    <p class="text-white font-Euclid text-[25px] font-semibold flex justify-start">Feature</p>
+                                    <p class="w-[328px] text-white/[0.56] text-xl  font-Euclid">Lorem ispum dolor sit amet lorem isput dolor sit amet</p>
+                                </section>
+                            </section>
+                            <section class="flex items-center gap-5 ">
+                                <img src="./assets/imgs/feature_icon.svg" alt="">
+                                <section class="space-y-2">
+                                    <p class="text-white font-Euclid text-[25px] font-semibold flex justify-start">Feature</p>
+                                    <p class="w-[328px] text-white/[0.56] text-xl  font-Euclid">Lorem ispum dolor sit amet lorem isput dolor sit amet</p>
+                                </section>
+                            </section>
+                            <section class="flex items-center gap-5 ">
+                                <img src="./assets/imgs/feature_icon.svg" alt="">
+                                <section class="space-y-2">
+                                    <p class="text-white font-Euclid text-[25px] font-semibold flex justify-start">Feature</p>
+                                    <p class="w-[328px] text-white/[0.56] text-xl  font-Euclid">Lorem ispum dolor sit amet lorem isput dolor sit amet</p>
+                                </section>
+                            </section>
+                            
+                        </menu>
+                    </section>
+                </section>
                 <li class="text-[22px] text-white font-Euclid"><a href="#">About Us</a></li>
                 <li class="text-[22px] text-white font-Euclid"><a href="#">Tape</a></li>
-                <li class="text-[22px] text-white font-Euclid">
-                    <a href="#" class="flex items-center gap-2">
+                <section class="" id="dropdownButton">
+                    <button onclick="toggleDropdown()" href="#" class="flex items-center gap-2 text-[22px] text-white font-Euclid relative">
                     Resources
-                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="9" viewBox="0 0 15 9" fill="none">
+                    <svg xmlns="http://www.w3.org/2000/svg" id="drpTarget" class="duration-300" width="15" height="9" viewBox="0 0 15 9" fill="none">
                         <path d="M1 1L7.5 7L13.5 1" stroke="white" stroke-opacity="0.56" stroke-width="2"/>
                     </svg>
-                    </a>
-                </li>
+                    </button>
+                    <section class="hidden" id="dropdown" class="absolute">
+                        <menu class=" mt-2 absolute flex flex-col justify-center items-start p-5  space-y-2 w-[154px] h-[120px] bg-neutral-950 border rounded-2xl border-gray-700">
+                            <li><a class="text-white/[0.56] font-Euclid text-xl duration-300 hover:text-white" href="#">Support</a></li>
+                            <li><a class="text-white/[0.56] font-Euclid text-xl duration-300 hover:text-white" href="#">FAQs</a></li>
+                            <li><a class="text-white/[0.56] font-Euclid text-xl duration-300 hover:text-white" href="#">Community</a></li>
+                        </menu>
+                    </section>
+                </section>
+
+                
+
             </ul>
             <a href="" class="bg-blue-500 w-[225px] h-[61px] rounded-[16px] flex justify-center items-center text-white text-[22px] font-Euclid">Log In</a>
         </nav>
@@ -134,13 +191,14 @@
             </section>
             <section>
                 <ul class="flex justify-center items-center gap-7">
-                    <li><a href="#" class="font-Euclid text-white/[0.56] text-[18px]">Team</a></li>
-                    <li><a href="#" class="font-Euclid text-white/[0.56] text-[18px]">Terms of service</a></li>
-                    <li><a href="#" class="font-Euclid text-white/[0.56] text-[18px]">Privacy Policy</a></li>
-                    <li><a href="#" class="font-Euclid text-white/[0.56] text-[18px]">Support</a></li>
+                    <li><a href="#" class="font-Euclid text-white/[0.56] text-[18px] duration-300 hover:text-white">Team</a></li>
+                    <li><a href="#" class="font-Euclid text-white/[0.56] text-[18px] duration-300 hover:text-white">Terms of service</a></li>
+                    <li><a href="#" class="font-Euclid text-white/[0.56] text-[18px] duration-300 hover:text-white">Privacy Policy</a></li>
+                    <li><a href="#" class="font-Euclid text-white/[0.56] text-[18px] duration-300 hover:text-white">Support</a></li>
                 </ul>
             </section>
         </section>
     </footer>
 </body>
+<script src="./assets/js/index.js"></script>
 </html>
