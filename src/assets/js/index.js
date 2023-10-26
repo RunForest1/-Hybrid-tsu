@@ -13,3 +13,11 @@ function toggleDropdown1() {
     dropdown1.classList.toggle("hidden");
     target1.classList.toggle("rotate-180"); 
 }
+
+function toggleOpenBurger() {
+    let open = document.querySelector('#OpenBurger #openburger');
+    let target2 = document.getElementById('drpTarget2');
+    
+    target2.classList.toggle("rotate-90");
+    open.classList.toggle('hidden');
+}

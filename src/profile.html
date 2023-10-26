@@ -10,94 +10,129 @@
 </head>
 <body class="bg-[#0B0C0D] bg-light-pattern bg-no-repeat bg-right-top ">
 
+  
   <header class="container my-6">
-    <nav class="flex justify-between items-center gap-52">
-      <a href="#" id="logo" class="bg-gray-500 w-[240px] h-[55px] rounded-[12px] flex justify-center items-center text-Euclid">Logo</a>
-      <ul class="flex items-center justify-center gap-16">
-          <section id="dropdownButton1" class="text-[22px] text-white font-Euclid">
-              <button onclick="toggleDropdown1()" href="#" class="flex items-center gap-2">
-              Features 
-              <svg xmlns="http://www.w3.org/2000/svg" id="drpTarget1" class="duration-300" width="15" height="9" viewBox="0 0 15 9" fill="none">
-              <path d="M1 1L7.5 7L13.5 1" stroke="white" stroke-opacity="0.56" stroke-width="2"/>
-              </svg>
-              </button>
-              <section class="hidden" id="dropdown1" class="absolute">
-                  <menu class="grid grid-cols-2 mt-2 p-6 gap-6 absolute inset-x-[435px] top-[90px] w-[1000px] h-[500px] text-white/[0.56] font-Euclid text-xl bg-neutral-950 border rounded-2xl border-gray-700">
-                      <section class="flex items-center gap-5 ">
-                          <img src="./assets/imgs/feature_icon.svg" alt="">
-                          <section class="space-y-2">
-                              <p class="text-white font-Euclid text-[25px] font-semibold flex justify-start">Feature</p>
-                              <p class="w-[328px] text-white/[0.56] text-xl  font-Euclid">Lorem ispum dolor sit amet lorem isput dolor sit amet</p>
-                          </section>
-                      </section>
-                      <section class="flex items-center gap-5 ">
-                          <img src="./assets/imgs/feature_icon.svg" alt="">
-                          <section class="space-y-2">
-                              <p class="text-white font-Euclid text-[25px] font-semibold flex justify-start">Feature</p>
-                              <p class="w-[328px] text-white/[0.56] text-xl  font-Euclid">Lorem ispum dolor sit amet lorem isput dolor sit amet</p>
-                          </section>
-                      </section>
-                      <section class="flex items-center gap-5 ">
-                          <img src="./assets/imgs/feature_icon.svg" alt="">
-                          <section class="space-y-2">
-                              <p class="text-white font-Euclid text-[25px] font-semibold flex justify-start">Feature</p>
-                              <p class="w-[328px] text-white/[0.56] text-xl  font-Euclid">Lorem ispum dolor sit amet lorem isput dolor sit amet</p>
-                          </section>
-                      </section>
-                      <section class="flex items-center gap-5 ">
-                          <img src="./assets/imgs/feature_icon.svg" alt="">
-                          <section class="space-y-2">
-                              <p class="text-white font-Euclid text-[25px] font-semibold flex justify-start">Feature</p>
-                              <p class="w-[328px] text-white/[0.56] text-xl  font-Euclid">Lorem ispum dolor sit amet lorem isput dolor sit amet</p>
-                          </section>
-                      </section>
-                      <section class="flex items-center gap-5 ">
-                          <img src="./assets/imgs/feature_icon.svg" alt="">
-                          <section class="space-y-2">
-                              <p class="text-white font-Euclid text-[25px] font-semibold flex justify-start">Feature</p>
-                              <p class="w-[328px] text-white/[0.56] text-xl  font-Euclid">Lorem ispum dolor sit amet lorem isput dolor sit amet</p>
-                          </section>
-                      </section>
-                      <section class="flex items-center gap-5 ">
-                          <img src="./assets/imgs/feature_icon.svg" alt="">
-                          <section class="space-y-2">
-                              <p class="text-white font-Euclid text-[25px] font-semibold flex justify-start">Feature</p>
-                              <p class="w-[328px] text-white/[0.56] text-xl  font-Euclid">Lorem ispum dolor sit amet lorem isput dolor sit amet</p>
-                          </section>
-                      </section>
-                      
-                  </menu>
-              </section>
-          </section>
-          <li class="text-[22px] text-white font-Euclid"><a href="#">About Us</a></li>
-          <li class="text-[22px] text-white font-Euclid"><a href="#">Tape</a></li>
-          <section class="" id="dropdownButton">
-              <button onclick="toggleDropdown()" href="#" class="flex items-center gap-2 text-[22px] text-white font-Euclid relative">
-              Resources
-              <svg xmlns="http://www.w3.org/2000/svg" id="drpTarget" class="duration-300" width="15" height="9" viewBox="0 0 15 9" fill="none">
-                  <path d="M1 1L7.5 7L13.5 1" stroke="white" stroke-opacity="0.56" stroke-width="2"/>
-              </svg>
-              </button>
-              <section class="hidden" id="dropdown" class="absolute">
-                  <menu class=" mt-2 absolute flex flex-col justify-center items-start p-5  space-y-2 w-[154px] h-[120px] bg-neutral-950 border rounded-2xl border-gray-700">
-                      <li><a class="text-white/[0.56] font-Euclid text-xl duration-300 hover:text-white" href="#">Support</a></li>
-                      <li><a class="text-white/[0.56] font-Euclid text-xl duration-300 hover:text-white" href="#">FAQs</a></li>
-                      <li><a class="text-white/[0.56] font-Euclid text-xl duration-300 hover:text-white" href="#">Community</a></li>
-                  </menu>
-              </section>
-          </section>
-
-          
-
-      </ul>
-      <button class="flex items-center gap-2">
-        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="9" viewBox="0 0 15 9" fill="none">
-            <path d="M1 1L7.5 7L13.5 1" stroke="white" stroke-opacity="0.56" stroke-width="2"/>
+    <nav class="flex justify-between items-center gap-42">
+        <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 54 54" fill="none">
+            <circle cx="27" cy="27" r="27" fill="#000B76"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.4227 25.8178C18.3561 30.9084 24.8552 36.4843 36.7734 13.5C40.8156 7.41124 52.9401 14.5499 50.2776 31.509C48.0675 42.1263 38.6114 50.1063 27.2812 50.1063C14.3112 50.1063 3.79688 39.649 3.79688 26.7492C3.79688 25.0825 3.97239 23.4566 4.30605 21.8887C7.1925 21.3306 9.75022 23.525 12.4227 25.8178Z" fill="url(#paint0_linear_2_931)"/>
+            <path d="M4.28906 21.9286C10.2656 6.92857 18.0703 8.08068 34.8047 17.1424L30.9375 23.7143C29.1797 26.4286 23.1328 35.5617 12.8672 26.7045C7.98394 22.4913 5.34375 21.4524 4.28906 21.9286Z" fill="url(#paint1_linear_2_931)"/>
+            <defs>
+                <linearGradient id="paint0_linear_2_931" x1="34.6567" y1="50.1422" x2="33.2526" y2="27.2404" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#07438D"/>
+                    <stop offset="1" stop-color="#008BFF"/>
+                </linearGradient>
+                <linearGradient id="paint1_linear_2_931" x1="21.375" y1="29.9378" x2="22.3183" y2="8.86771" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#0A179C"/>
+                    <stop offset="1" stop-color="#061EFD"/>
+                </linearGradient>
+            </defs>
         </svg>
-        <img src="./assets/imgs/profile.png" alt="">
-      </button>
+        <ul class="flex items-center justify-center gap-16 text-[22px] xl:text-[18px] xl:gap-12 md:hidden">
+            <section id="dropdownButton1" class="text-white font-Euclid">
+                <button onclick="toggleDropdown1()" href="#" class="flex items-center gap-2">
+                Features 
+                <svg xmlns="http://www.w3.org/2000/svg" id="drpTarget1" class="duration-300" width="15" height="9" viewBox="0 0 15 9" fill="none">
+                <path d="M1 1L7.5 7L13.5 1" stroke="white" stroke-opacity="0.56" stroke-width="2"/>
+                </svg>
+                </button>
+                <section class="hidden animate-slide-down absolute" id="dropdown1">
+                    <ul class="grid grid-cols-2 mt-2 p-6 gap-6 absolute -left-52 top-8 w-[1000px] h-[500px] xxl:w-[950px] xxl:h-[400px] xl:-left-72 text-white/[0.56] font-Euclid text-xl bg-neutral-950 border rounded-2xl border-gray-700">
+                        <section class="flex items-center gap-5 ">
+                            <img src="./assets/imgs/feature_icon.svg" alt="" class="xl:w-20">
+                            <section class="space-y-2">
+                                <p class="text-white font-Euclid text-[25px] xl:text-xl font-semibold flex justify-start">Feature</p>
+                                <p class="w-[328px] text-white/[0.56] text-xl xl:text-sm xl:w-2/3  font-Euclid">Lorem ispum dolor sit amet lorem isput dolor sit amet</p>
+                            </section>
+                        </section>
+                        <section class="flex items-center gap-5 ">
+                            <img src="./assets/imgs/feature_icon.svg" alt="" class="xl:w-20">
+                            <section class="space-y-2">
+                                <p class="text-white font-Euclid text-[25px] xl:text-xl font-semibold flex justify-start">Feature</p>
+                                <p class="w-[328px] text-white/[0.56] text-xl xl:text-sm xl:w-2/3  font-Euclid">Lorem ispum dolor sit amet lorem isput dolor sit amet</p>
+                            </section>
+                        </section>
+                        <section class="flex items-center gap-5 ">
+                            <img src="./assets/imgs/feature_icon.svg" alt="" class="xl:w-20">
+                            <section class="space-y-2">
+                                <p class="text-white font-Euclid text-[25px] xl:text-xl font-semibold flex justify-start">Feature</p>
+                                <p class="w-[328px] text-white/[0.56] text-xl xl:text-sm xl:w-2/3  font-Euclid">Lorem ispum dolor sit amet lorem isput dolor sit amet</p>
+                            </section>
+                        </section>
+                        <section class="flex items-center gap-5 ">
+                            <img src="./assets/imgs/feature_icon.svg" alt="" class="xl:w-20">
+                            <section class="space-y-2">
+                                <p class="text-white font-Euclid text-[25px] xl:text-xl font-semibold flex justify-start">Feature</p>
+                                <p class="w-[328px] text-white/[0.56] text-xl xl:text-sm xl:w-2/3  font-Euclid">Lorem ispum dolor sit amet lorem isput dolor sit amet</p>
+                            </section>
+                        </section>
+                        <section class="flex items-center gap-5 ">
+                            <img src="./assets/imgs/feature_icon.svg" alt="" class="xl:w-20">
+                            <section class="space-y-2">
+                                <p class="text-white font-Euclid text-[25px] xl:text-xl font-semibold flex justify-start">Feature</p>
+                                <p class="w-[328px] text-white/[0.56] text-xl xl:text-sm xl:w-2/3  font-Euclid">Lorem ispum dolor sit amet lorem isput dolor sit amet</p>
+                            </section>
+                        </section>
+                        <section class="flex items-center gap-5 ">
+                            <img src="./assets/imgs/feature_icon.svg" alt="" class="xl:w-20">
+                            <section class="space-y-2">
+                                <p class="text-white font-Euclid text-[25px] xl:text-xl font-semibold flex justify-start">Feature</p>
+                                <p class="w-[328px] text-white/[0.56] text-xl xl:text-sm xl:w-2/3  font-Euclid">Lorem ispum dolor sit amet lorem isput dolor sit amet</p>
+                            </section>
+                        </section>
+                        
+                    </ul>
+                </section>
+            </section>
+            <li class="text-white font-Euclid"><a href="#">About Us</a></li>
+            <li class="text-white font-Euclid"><a href="#">Tape</a></li>
+            <section class="" id="dropdownButton">
+                <button onclick="toggleDropdown()" href="#" class="flex items-center gap-2 text-white font-Euclid relative ">
+                Resources
+                <svg xmlns="http://www.w3.org/2000/svg" id="drpTarget" class="duration-300" width="15" height="9" viewBox="0 0 15 9" fill="none">
+                    <path d="M1 1L7.5 7L13.5 1" stroke="white" stroke-opacity="0.56" stroke-width="2"/>
+                </svg>
+                </button>
+                <section class="hidden animate-slide-down" id="dropdown" class="absolute">
+                    <ul class=" mt-2 absolute flex flex-col justify-center items-start p-5  space-y-2 w-[154px] h-[120px] xl:w-[120px] xl:h-[100px] bg-neutral-950 border rounded-2xl border-gray-700">
+                        <li><a class="text-white/[0.56] font-Euclid text-xl xl:text-sm duration-300 hover:text-white" href="#">Support</a></li>
+                        <li><a class="text-white/[0.56] font-Euclid text-xl xl:text-sm duration-300 hover:text-white" href="#">FAQs</a></li>
+                        <li><a class="text-white/[0.56] font-Euclid text-xl xl:text-sm duration-300 hover:text-white" href="#">Community</a></li>
+                    </ul>
+                </section>
+            </section>
+
+            
+
+        </ul>
+        <button class="flex items-center gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="9" viewBox="0 0 15 9" fill="none">
+              <path d="M1 1L7.5 7L13.5 1" stroke="white" stroke-opacity="0.56" stroke-width="2"/>
+          </svg>
+          <img src="./assets/imgs/profile.png" alt="">
+        </button>
+        <section id="OpenBurger" class="hidden md:block">
+            <button onclick="toggleOpenBurger()" href="#" class="flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" id="drpTarget2" class="duration-500 icon icon-tabler icon-tabler-menu-2 stroke-blue-500" width="64" height="64" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M4 6l16 0"></path>
+                    <path d="M4 12l16 0"></path>
+                    <path d="M4 18l16 0"></path>
+                </svg>
+            </button>
+            <section class="absolute left-0 w-screen h-[100vh] hidden animate-open-menu" id="openburger">
+                <ul class="text-[22px] mt-2 flex flex-col justify-center items-center p-5  space-y-2 border  bg-neutral-950 border-gray-700">
+                    <li class="text-white font-Euclid"><a href="#">Features</a></li>
+                    <li class="text-white font-Euclid"><a href="#">About Us</a></li>
+                    <li class="text-white font-Euclid"><a href="#">Tape</a></li>
+                    <li class="text-white font-Euclid"><a href="#">Resources</a></li>
+                    <li class="text-blue-500 font-Euclid"><a href="#">Log In</a></li>
+                </ul> 
+            </section>
+        </section>
     </nav>
   </header>
+
   <main class="container">
       <section id="user" class="flex justify-between items-center mt-40">
           <section class="flex items-center gap-9">

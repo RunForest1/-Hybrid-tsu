@@ -8,148 +8,182 @@
     <link href="assets/css/tailwind.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&fEuclidpins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body class="bg-[#0B0C0D] bg-light-pattern bg-no-repeat bg-right-top ">
+<body class="bg-[#0B0C0D] bg-light-pattern bg-no-repeat bg-right-top xxl:bg-small-light-pattern xl:bg-small-light-pattern">
 
     <header class="container my-6">
-        <nav class="flex justify-between items-center gap-52">
-            <a href="#" id="logo" class="bg-gray-500 w-[240px] h-[55px] rounded-[12px] flex justify-center items-center text-Euclid">Logo</a>
-            <ul class="flex items-center justify-center gap-16">
-                <section id="dropdownButton1" class="text-[22px] text-white font-Euclid">
+        <nav class="flex justify-between items-center gap-42">
+            <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 54 54" fill="none">
+                <circle cx="27" cy="27" r="27" fill="#000B76"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.4227 25.8178C18.3561 30.9084 24.8552 36.4843 36.7734 13.5C40.8156 7.41124 52.9401 14.5499 50.2776 31.509C48.0675 42.1263 38.6114 50.1063 27.2812 50.1063C14.3112 50.1063 3.79688 39.649 3.79688 26.7492C3.79688 25.0825 3.97239 23.4566 4.30605 21.8887C7.1925 21.3306 9.75022 23.525 12.4227 25.8178Z" fill="url(#paint0_linear_2_931)"/>
+                <path d="M4.28906 21.9286C10.2656 6.92857 18.0703 8.08068 34.8047 17.1424L30.9375 23.7143C29.1797 26.4286 23.1328 35.5617 12.8672 26.7045C7.98394 22.4913 5.34375 21.4524 4.28906 21.9286Z" fill="url(#paint1_linear_2_931)"/>
+                <defs>
+                    <linearGradient id="paint0_linear_2_931" x1="34.6567" y1="50.1422" x2="33.2526" y2="27.2404" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#07438D"/>
+                        <stop offset="1" stop-color="#008BFF"/>
+                    </linearGradient>
+                    <linearGradient id="paint1_linear_2_931" x1="21.375" y1="29.9378" x2="22.3183" y2="8.86771" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#0A179C"/>
+                        <stop offset="1" stop-color="#061EFD"/>
+                    </linearGradient>
+                </defs>
+            </svg>
+            <ul class="flex items-center justify-center gap-16 text-[22px] xl:text-[18px] xl:gap-12 md:hidden">
+                <section id="dropdownButton1" class="text-white font-Euclid">
                     <button onclick="toggleDropdown1()" href="#" class="flex items-center gap-2">
                     Features 
                     <svg xmlns="http://www.w3.org/2000/svg" id="drpTarget1" class="duration-300" width="15" height="9" viewBox="0 0 15 9" fill="none">
                     <path d="M1 1L7.5 7L13.5 1" stroke="white" stroke-opacity="0.56" stroke-width="2"/>
                     </svg>
                     </button>
-                    <section class="hidden" id="dropdown1" class="absolute">
-                        <menu class="grid grid-cols-2 mt-2 p-6 gap-6 absolute inset-x-[435px] top-[90px] w-[1000px] h-[500px] text-white/[0.56] font-Euclid text-xl bg-neutral-950 border rounded-2xl border-gray-700">
+                    <section class="hidden animate-slide-down absolute" id="dropdown1">
+                        <ul class="grid grid-cols-2 mt-2 p-6 gap-6 absolute -left-52 top-8 w-[1000px] h-[500px] xxl:w-[950px] xxl:h-[400px] xl:-left-72 text-white/[0.56] font-Euclid text-xl bg-neutral-950 border rounded-2xl border-gray-700">
                             <section class="flex items-center gap-5 ">
-                                <img src="./assets/imgs/feature_icon.svg" alt="">
+                                <img src="./assets/imgs/feature_icon.svg" alt="" class="xl:w-20">
                                 <section class="space-y-2">
-                                    <p class="text-white font-Euclid text-[25px] font-semibold flex justify-start">Feature</p>
-                                    <p class="w-[328px] text-white/[0.56] text-xl  font-Euclid">Lorem ispum dolor sit amet lorem isput dolor sit amet</p>
+                                    <p class="text-white font-Euclid text-[25px] xl:text-xl font-semibold flex justify-start">Feature</p>
+                                    <p class="w-[328px] text-white/[0.56] text-xl xl:text-sm xl:w-2/3  font-Euclid">Lorem ispum dolor sit amet lorem isput dolor sit amet</p>
                                 </section>
                             </section>
                             <section class="flex items-center gap-5 ">
-                                <img src="./assets/imgs/feature_icon.svg" alt="">
+                                <img src="./assets/imgs/feature_icon.svg" alt="" class="xl:w-20">
                                 <section class="space-y-2">
-                                    <p class="text-white font-Euclid text-[25px] font-semibold flex justify-start">Feature</p>
-                                    <p class="w-[328px] text-white/[0.56] text-xl  font-Euclid">Lorem ispum dolor sit amet lorem isput dolor sit amet</p>
+                                    <p class="text-white font-Euclid text-[25px] xl:text-xl font-semibold flex justify-start">Feature</p>
+                                    <p class="w-[328px] text-white/[0.56] text-xl xl:text-sm xl:w-2/3  font-Euclid">Lorem ispum dolor sit amet lorem isput dolor sit amet</p>
                                 </section>
                             </section>
                             <section class="flex items-center gap-5 ">
-                                <img src="./assets/imgs/feature_icon.svg" alt="">
+                                <img src="./assets/imgs/feature_icon.svg" alt="" class="xl:w-20">
                                 <section class="space-y-2">
-                                    <p class="text-white font-Euclid text-[25px] font-semibold flex justify-start">Feature</p>
-                                    <p class="w-[328px] text-white/[0.56] text-xl  font-Euclid">Lorem ispum dolor sit amet lorem isput dolor sit amet</p>
+                                    <p class="text-white font-Euclid text-[25px] xl:text-xl font-semibold flex justify-start">Feature</p>
+                                    <p class="w-[328px] text-white/[0.56] text-xl xl:text-sm xl:w-2/3  font-Euclid">Lorem ispum dolor sit amet lorem isput dolor sit amet</p>
                                 </section>
                             </section>
                             <section class="flex items-center gap-5 ">
-                                <img src="./assets/imgs/feature_icon.svg" alt="">
+                                <img src="./assets/imgs/feature_icon.svg" alt="" class="xl:w-20">
                                 <section class="space-y-2">
-                                    <p class="text-white font-Euclid text-[25px] font-semibold flex justify-start">Feature</p>
-                                    <p class="w-[328px] text-white/[0.56] text-xl  font-Euclid">Lorem ispum dolor sit amet lorem isput dolor sit amet</p>
+                                    <p class="text-white font-Euclid text-[25px] xl:text-xl font-semibold flex justify-start">Feature</p>
+                                    <p class="w-[328px] text-white/[0.56] text-xl xl:text-sm xl:w-2/3  font-Euclid">Lorem ispum dolor sit amet lorem isput dolor sit amet</p>
                                 </section>
                             </section>
                             <section class="flex items-center gap-5 ">
-                                <img src="./assets/imgs/feature_icon.svg" alt="">
+                                <img src="./assets/imgs/feature_icon.svg" alt="" class="xl:w-20">
                                 <section class="space-y-2">
-                                    <p class="text-white font-Euclid text-[25px] font-semibold flex justify-start">Feature</p>
-                                    <p class="w-[328px] text-white/[0.56] text-xl  font-Euclid">Lorem ispum dolor sit amet lorem isput dolor sit amet</p>
+                                    <p class="text-white font-Euclid text-[25px] xl:text-xl font-semibold flex justify-start">Feature</p>
+                                    <p class="w-[328px] text-white/[0.56] text-xl xl:text-sm xl:w-2/3  font-Euclid">Lorem ispum dolor sit amet lorem isput dolor sit amet</p>
                                 </section>
                             </section>
                             <section class="flex items-center gap-5 ">
-                                <img src="./assets/imgs/feature_icon.svg" alt="">
+                                <img src="./assets/imgs/feature_icon.svg" alt="" class="xl:w-20">
                                 <section class="space-y-2">
-                                    <p class="text-white font-Euclid text-[25px] font-semibold flex justify-start">Feature</p>
-                                    <p class="w-[328px] text-white/[0.56] text-xl  font-Euclid">Lorem ispum dolor sit amet lorem isput dolor sit amet</p>
+                                    <p class="text-white font-Euclid text-[25px] xl:text-xl font-semibold flex justify-start">Feature</p>
+                                    <p class="w-[328px] text-white/[0.56] text-xl xl:text-sm xl:w-2/3  font-Euclid">Lorem ispum dolor sit amet lorem isput dolor sit amet</p>
                                 </section>
                             </section>
                             
-                        </menu>
+                        </ul>
                     </section>
                 </section>
-                <li class="text-[22px] text-white font-Euclid"><a href="#">About Us</a></li>
-                <li class="text-[22px] text-white font-Euclid"><a href="#">Tape</a></li>
+                <li class="text-white font-Euclid"><a href="#">About Us</a></li>
+                <li class="text-white font-Euclid"><a href="#">Tape</a></li>
                 <section class="" id="dropdownButton">
-                    <button onclick="toggleDropdown()" href="#" class="flex items-center gap-2 text-[22px] text-white font-Euclid relative">
+                    <button onclick="toggleDropdown()" href="#" class="flex items-center gap-2 text-white font-Euclid relative ">
                     Resources
                     <svg xmlns="http://www.w3.org/2000/svg" id="drpTarget" class="duration-300" width="15" height="9" viewBox="0 0 15 9" fill="none">
                         <path d="M1 1L7.5 7L13.5 1" stroke="white" stroke-opacity="0.56" stroke-width="2"/>
                     </svg>
                     </button>
-                    <section class="hidden" id="dropdown" class="absolute">
-                        <menu class=" mt-2 absolute flex flex-col justify-center items-start p-5  space-y-2 w-[154px] h-[120px] bg-neutral-950 border rounded-2xl border-gray-700">
-                            <li><a class="text-white/[0.56] font-Euclid text-xl duration-300 hover:text-white" href="#">Support</a></li>
-                            <li><a class="text-white/[0.56] font-Euclid text-xl duration-300 hover:text-white" href="#">FAQs</a></li>
-                            <li><a class="text-white/[0.56] font-Euclid text-xl duration-300 hover:text-white" href="#">Community</a></li>
-                        </menu>
+                    <section class="hidden animate-slide-down" id="dropdown" class="absolute">
+                        <ul class=" mt-2 absolute flex flex-col justify-center items-start p-5  space-y-2 w-[154px] h-[120px] xl:w-[120px] xl:h-[100px] bg-neutral-950 border rounded-2xl border-gray-700">
+                            <li><a class="text-white/[0.56] font-Euclid text-xl xl:text-sm duration-300 hover:text-white" href="#">Support</a></li>
+                            <li><a class="text-white/[0.56] font-Euclid text-xl xl:text-sm duration-300 hover:text-white" href="#">FAQs</a></li>
+                            <li><a class="text-white/[0.56] font-Euclid text-xl xl:text-sm duration-300 hover:text-white" href="#">Community</a></li>
+                        </ul>
                     </section>
                 </section>
 
                 
 
             </ul>
-            <a href="" class="bg-blue-500 w-[225px] h-[61px] rounded-[16px] flex justify-center items-center text-white text-[22px] font-Euclid">Log In</a>
+            <a href="" class="bg-blue-500 w-[225px] h-[61px] rounded-[16px] flex justify-center items-center text-white text-[22px] font-Euclid xl:w-36 md:hidden">Log In</a>
+            <section id="OpenBurger" class="hidden md:block">
+                <button onclick="toggleOpenBurger()" href="#" class="flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" id="drpTarget2" class="duration-500 icon icon-tabler icon-tabler-menu-2 stroke-blue-500" width="64" height="64" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M4 6l16 0"></path>
+                        <path d="M4 12l16 0"></path>
+                        <path d="M4 18l16 0"></path>
+                    </svg>
+                </button>
+                <section class="absolute left-0 w-screen h-[100vh] hidden animate-open-menu" id="openburger">
+                    <ul class="text-[22px] mt-2 flex flex-col justify-center items-center p-5  space-y-2 border  bg-neutral-950 border-gray-700">
+                        <li class="text-white font-Euclid"><a href="#">Features</a></li>
+                        <li class="text-white font-Euclid"><a href="#">About Us</a></li>
+                        <li class="text-white font-Euclid"><a href="#">Tape</a></li>
+                        <li class="text-white font-Euclid"><a href="#">Resources</a></li>
+                        <li class="text-blue-500 font-Euclid"><a href="#">Log In</a></li>
+                    </ul> 
+                </section>
+            </section>
         </nav>
     </header>
-
     <main class="container">
-        <section id="hero" class="flex justify-between items-center mt-20">
-            <section id="lets_start" class="space-y-8">
-                <p class="text-[52px] text-white w-[450px] text-Euclid leading-none">Let`s start your <span class=" bg-gradient-to-r from-[#3B82F6B2] to-[#3B82F6] text-transparent bg-clip-text text-Euclid">carrier</span> with <span class="text-Euclid bg-gradient-to-r from-[#3B82F6B2] to-[#3B82F6] text-transparent bg-clip-text">NAME</span></p>
-                <p class="text-Euclid text-white/[0.56] w-[500px] text-[22px]">Lorem ispum dolor sit amet lorem ispum dolor sit amet lorem ispum dolor sit amet</p>
-                <button id="start" class="flex items-center justify-center gap-4 bg-blue-500 w-[225px] h-[60px] rounded-[16px] text-white text-[22px]">
+        <section id="hero" class="flex justify-between items-center mt-20 sm:grid grid-cols-1">
+            <section id="lets_start" class="space-y-8 md:w-[350px]">
+                <section class="space-y-8">
+                    <p class="text-[52px] xl:text-[42px] sm:flex flex-col items-start text-white w-[450px] text-Euclid leading-none">Let`s start your <span class=" bg-gradient-to-r from-[#3B82F6B2] to-[#3B82F6] text-transparent bg-clip-text text-Euclid">carrier</span> with <span class="text-Euclid bg-gradient-to-r from-[#3B82F6B2] to-[#3B82F6] text-transparent bg-clip-text">NAME</span></p>
+                    <p class="text-Euclid text-white/[0.56] w-[500px] text-[22px] xl:text-[18px] md:w-[300px] ">Lorem ispum dolor sit amet lorem ispum dolor sit amet lorem ispum dolor sit amet</p>
+                    <button id="start" class="flex items-center justify-center gap-4 bg-blue-500 w-[225px] h-[60px] xl:w-40 xl:h-12 rounded-[16px] text-white text-[22px] ">
                     <svg xmlns="http://www.w3.org/2000/svg" width="15" height="18" viewBox="0 0 15 18" fill="none">
                     <path d="M3.97067e-08 0.999977V17C-5.0094e-05 17.1779 0.0473748 17.3526 0.137382 17.5061C0.227388 17.6596 0.356717 17.7863 0.512024 17.8731C0.667332 17.9599 0.842993 18.0038 1.02088 18C1.19878 17.9963 1.37245 17.9452 1.524 17.852L14.524 9.85198C14.6696 9.76251 14.7898 9.63722 14.8733 9.48806C14.9567 9.33891 15.0005 9.17087 15.0005 8.99998C15.0005 8.82908 14.9567 8.66104 14.8733 8.51189C14.7898 8.36274 14.6696 8.23745 14.524 8.14798L1.524 0.147977C1.37245 0.0547413 1.19878 0.00362895 1.02088 -8.70197e-05C0.842993 -0.00380299 0.667332 0.0400121 0.512024 0.126837C0.356717 0.213663 0.227388 0.340354 0.137382 0.49384C0.0473748 0.647325 -5.0094e-05 0.822047 3.97067e-08 0.999977Z" fill="white"/>
                     </svg>
                     <span>Lets Create</span>
                 </button>
+                </section>
                 <section class="pt-9">
                     <span class="text-white text-[22px] font-Euclid">OUT STATISTIC</span>
-                    <section class="grid grid-cols-2 gap-5 pt-5 w-[500px]">
-                        <figure class="flex items-center bg-[#101113CC]/[0.8] border border-gray-800 rounded-[15px] h-32  justify-start gap-3 pl-6">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="63" height="63" viewBox="0 0 63 63" fill="none">
+                    <section class="grid grid-cols-2 gap-5 pt-5 w-[500px] md:w-[384px] sm:w-[384px]">
+                        <figure class="flex items-center bg-[#101113CC]/[0.8] border border-gray-800 rounded-[15px] h-32  justify-start gap-3 pl-6 xl:h-20">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="63" height="63" viewBox="0 0 63 63" fill="none" class="xl:w-10">
                                 <circle cx="23.5" cy="15.75" r="10.5" fill="#3B82F6"/>
                                 <ellipse cx="23.375" cy="43.5" rx="18.375" ry="10.5" fill="#3B82F6"/>
                                 <path d="M55.124 42.7493C55.124 47.0985 49.7807 50.6242 43.2568 50.6242C45.1789 48.5234 46.5005 45.8863 46.5005 42.7529C46.5005 39.6159 45.1758 36.9764 43.2501 34.8744C49.774 34.8744 55.124 38.4 55.124 42.7493Z" fill="#3B82F6"/>
                                 <path d="M47.249 13.875C47.249 18.2242 43.7233 21.75 39.374 21.75C38.4256 21.75 37.5164 21.5824 36.6744 21.2751C37.9162 19.0908 38.6255 16.5643 38.6255 13.8721C38.6255 11.1818 37.9173 8.65704 36.6771 6.4739C37.5184 6.16727 38.4267 6 39.374 6C43.7233 6 47.249 9.52576 47.249 13.875Z" fill="#3B82F6"/>
                             </svg>
                             <section>
-                                <p class="font-Euclid text-blue-500 text-[16px]">ALL USERS</p>
-                                <p class="font-Euclid text-white text-[24px]">12.921.251</p>
+                                <p class="font-Euclid text-blue-500 text-[16px] xl:text-[12px]">ALL USERS</p>
+                                <p class="font-Euclid text-white text-[24px] xl:text-[18px]">12.921.251</p>
                             </section>
                         </figure>
-                        <figure class="flex items-center bg-[#101113CC]/[0.8] border border-gray-800 rounded-[15px] h-32  justify-start gap-3 pl-6">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="63" height="63" viewBox="0 0 63 63" fill="none">
+                        <figure class="flex items-center bg-[#101113CC]/[0.8] border border-gray-800 rounded-[15px] h-32  justify-start gap-3 pl-6 xl:h-20">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="63" height="63" viewBox="0 0 63 63" fill="none" class="xl:w-10">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M48.4829 35.3579C49.2517 34.589 50.4983 34.589 51.2671 35.3579L56.5171 40.6079C57.286 41.3767 57.286 42.6233 56.5171 43.3921C55.7483 44.161 54.5017 44.161 53.7329 43.3921L51.8438 41.503V52.5C51.8438 53.5873 50.9623 54.4688 49.875 54.4688C48.7877 54.4688 47.9062 53.5873 47.9062 52.5V41.503L46.0171 43.3921C45.2483 44.161 44.0017 44.161 43.2329 43.3921C42.464 42.6233 42.464 41.3767 43.2329 40.6079L48.4829 35.3579Z" fill="#3B82F6"/>
                                 <path d="M26.25 10.5H36.75C46.6495 10.5 51.5992 10.5 54.6746 13.5754C56.8889 15.7897 57.5089 18.9757 57.6825 24.2812H5.31751C5.4911 18.9757 6.11108 15.7897 8.32538 13.5754C11.4008 10.5 16.3505 10.5 26.25 10.5Z" fill="#3B82F6"/>
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M26.25 52.5H36.75C39.5218 52.5 41.9055 52.5 43.9688 52.4325V47.8699C42.6828 47.727 41.4347 47.1624 40.4487 46.1763C38.1421 43.8698 38.1421 40.1302 40.4487 37.8237L45.6987 32.5737C48.0052 30.2671 51.7448 30.2671 54.0513 32.5737L57.7336 36.2559C57.75 34.811 57.75 33.2312 57.75 31.5C57.75 30.3399 57.75 29.2478 57.7451 28.2188H5.25495C5.25 29.2478 5.25 30.3399 5.25 31.5C5.25 41.3995 5.25 46.3492 8.32538 49.4246C11.4008 52.5 16.3505 52.5 26.25 52.5ZM13.7812 42C13.7812 40.9127 14.6627 40.0312 15.75 40.0312H26.25C27.3373 40.0312 28.2188 40.9127 28.2188 42C28.2188 43.0873 27.3373 43.9688 26.25 43.9688H15.75C14.6627 43.9688 13.7812 43.0873 13.7812 42ZM32.8125 40.0312C31.7252 40.0312 30.8438 40.9127 30.8438 42C30.8438 43.0873 31.7252 43.9688 32.8125 43.9688H36.75C37.8373 43.9688 38.7188 43.0873 38.7188 42C38.7188 40.9127 37.8373 40.0312 36.75 40.0312H32.8125Z" fill="#3B82F6"/>
                             </svg>
                             <section>
-                                <p class="font-Euclid text-blue-500 text-[16px]">AVERAGE DEPOSIT</p>
-                                <p class="font-Euclid text-white text-[24px]">$5.000</p>
+                                <p class="font-Euclid text-blue-500 text-[16px] xl:text-[12px]">AVERAGE DEPOSIT</p>
+                                <p class="font-Euclid text-white text-[24px] xl:text-[18px]">$5.000</p>
                             </section>
                         </figure>
-                        <figure class="flex items-center bg-[#101113CC]/[0.8] border border-gray-800 rounded-[15px] h-32  justify-start gap-3 pl-6">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="63" height="63" viewBox="0 0 63 63" fill="none">
+                        <figure class="flex items-center bg-[#101113CC]/[0.8] border border-gray-800 rounded-[15px] h-32  justify-start gap-3 pl-6 xl:h-20">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="63" height="63" viewBox="0 0 63 63" fill="none" class="xl:w-10">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M5.57193 33.6419C6.32673 36.2738 8.35524 38.3023 12.4123 42.3593L17.2151 47.1621C24.2737 54.2207 27.8029 57.75 32.1886 57.75C36.5742 57.75 40.1035 54.2207 47.1621 47.1621C54.2207 40.1035 57.75 36.5742 57.75 32.1886C57.75 27.8029 54.2207 24.2737 47.1621 17.2151L42.3593 12.4123C38.3023 8.35524 36.2738 6.32673 33.6419 5.57193C31.0101 4.81712 28.2148 5.46219 22.6242 6.75232L19.4002 7.49632C14.6969 8.58171 12.3452 9.12441 10.7348 10.7348C9.12441 12.3452 8.58171 14.6969 7.49632 19.4002L6.75232 22.6242C5.46219 28.2148 4.81712 31.0101 5.57193 33.6419ZM26.5739 19.0863C28.6413 21.1537 28.6413 24.5057 26.5739 26.5731C24.5065 28.6405 21.1546 28.6405 19.0871 26.5731C17.0197 24.5057 17.0197 21.1537 19.0871 19.0863C21.1546 17.0189 24.5065 17.0189 26.5739 19.0863ZM50.0091 31.6341L31.6892 49.9546C30.9204 50.7234 29.6739 50.7235 28.905 49.9546C28.1361 49.1858 28.1361 47.9393 28.9049 47.1704L47.2248 28.8499C47.9937 28.081 49.2402 28.081 50.0091 28.8498C50.7779 29.6187 50.7779 30.8652 50.0091 31.6341Z" fill="#3B82F6"/>
                             </svg>
                             <section>
-                                <p class="font-Euclid text-blue-500 text-[16px]">TOTAL ASSETS</p>
-                                <p class="font-Euclid text-white text-[24px]">5.000</p>
+                                <p class="font-Euclid text-blue-500 text-[16px] xl:text-[12px]">TOTAL ASSETS</p>
+                                <p class="font-Euclid text-white text-[24px] xl:text-[18px]">5.000</p>
                             </section>
                         </figure>
-                        <figure class="flex items-center bg-[#101113CC]/[0.8] border border-gray-800 rounded-[15px] h-32  justify-start gap-3 pl-6">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="63" height="63" viewBox="0 0 63 63" fill="none">
+                        <figure class="flex items-center bg-[#101113CC]/[0.8] border border-gray-800 rounded-[15px] h-32  justify-start gap-3 pl-6 xl:h-20">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="63" height="63" viewBox="0 0 63 63" fill="none" class="xl:w-10">
                                 <circle cx="23.5" cy="15.75" r="10.5" fill="#3B82F6"/>
                                 <ellipse cx="23.375" cy="43.5" rx="18.375" ry="10.5" fill="#3B82F6"/>
                                 <path d="M55.124 42.7493C55.124 47.0985 49.7807 50.6242 43.2568 50.6242C45.1789 48.5234 46.5005 45.8863 46.5005 42.7529C46.5005 39.6159 45.1758 36.9764 43.2501 34.8744C49.774 34.8744 55.124 38.4 55.124 42.7493Z" fill="#3B82F6"/>
                                 <path d="M47.249 13.875C47.249 18.2242 43.7233 21.75 39.374 21.75C38.4256 21.75 37.5164 21.5824 36.6744 21.2751C37.9162 19.0908 38.6255 16.5643 38.6255 13.8721C38.6255 11.1818 37.9173 8.65704 36.6771 6.4739C37.5184 6.16727 38.4267 6 39.374 6C43.7233 6 47.249 9.52576 47.249 13.875Z" fill="#3B82F6"/>
                             </svg>
                             <section>
-                                <p class="font-Euclid text-blue-500 text-[16px]">TOTAL PAID</p>
-                                <p class="font-Euclid text-white text-[24px]">$5.000.000</p>
+                                <p class="font-Euclid text-blue-500 text-[16px] xl:text-[12px]">TOTAL PAID</p>
+                                <p class="font-Euclid text-white text-[24px] xl:text-[18px]">$5.000.000</p>
                             </section>
                         </figure>
                         
@@ -157,29 +191,29 @@
                     </section>
                 </section>
             </section>
-            <img src="./assets/imgs/hero.svg" alt="hero">
+            <img src="./assets/imgs/hero.svg" alt="hero" class="xl:w-[480px] xl:h-[480px] sm:hidden">
         </section>
         <section id="features" class="mt-28 space-y-[324px]">
-            <section id="features_1" class="flex items-center justify-between space-y-2">
-                <section class="">
-                    <span class="font-Euclid text-[42px] text-white">Lorem Ispum Dolor</span>
-                    <p class="w-[400px] font-Euclid text-[18px] text-white/[0.56]">Lorem ispum dolor sit amet lorem ispum dolor sit amet lorem ispum dolor sit amet lorem ispum dolor sit amet lorem ispum dolor sit amet lorem ispum dolor sit amet lorem ispum dolor sit amet lorem ispum dolor sit amet lorem ispum dolor sit amet</p>
+            <section id="features_1" class="flex items-center justify-between space-y-2 sm:flex-col">
+                <section class="w-96 md:w-80">
+                    <span class="font-Euclid text-[42px] xl:text-[32px] text-white">Lorem Ispum Dolor</span>
+                    <p class=" font-Euclid text-[18px] xl:text-[14px] md:text-[12px] text-white/[0.56]">Lorem ispum dolor sit amet lorem ispum dolor sit amet lorem ispum dolor sit amet lorem ispum dolor sit amet lorem ispum dolor sit amet lorem ispum dolor sit amet lorem ispum dolor sit amet lorem ispum dolor sit amet lorem ispum dolor sit amet</p>
                 </section>
-                <img src="./assets/imgs/features1.svg" alt="features">
+                <img src="./assets/imgs/features1.svg" alt="features" class="xl:w-96 xl:h-60 ">
             </section>
-            <section id="features_2" class="flex items-center justify-between space-y-2">
-                <img src="./assets/imgs/features2.svg" alt="features">
-                <section class="">
-                    <span class="font-Euclid text-[42px] text-white">Lorem Ispum Dolor</span>
-                    <p class="w-[400px] font-Euclid text-[18px] text-white/[0.56]">Lorem ispum dolor sit amet lorem ispum dolor sit amet lorem ispum dolor sit amet lorem ispum dolor sit amet lorem ispum dolor sit amet lorem ispum dolor sit amet lorem ispum dolor sit amet lorem ispum dolor sit amet lorem ispum dolor sit amet</p>
+            <section id="features_2" class="flex items-center justify-between space-y-2 sm:flex-col">
+                <img src="./assets/imgs/features2.svg" alt="features" class="xl:w-96 xl:h-60 ">
+                <section class="w-96 md:w-80">
+                    <span class="font-Euclid text-[42px] xl:text-[32px] text-white">Lorem Ispum Dolor</span>
+                    <p class=" font-Euclid text-[18px] xl:text-[14px] md:text-[12px] text-white/[0.56]">Lorem ispum dolor sit amet lorem ispum dolor sit amet lorem ispum dolor sit amet lorem ispum dolor sit amet lorem ispum dolor sit amet lorem ispum dolor sit amet lorem ispum dolor sit amet lorem ispum dolor sit amet lorem ispum dolor sit amet</p>
                 </section>
             </section>
-            <section id="features_3" class="flex items-center justify-between space-y-2">
-                <section class="">
-                    <span class="font-Euclid text-[42px] text-white">Lorem Ispum Dolor</span>
-                    <p class="w-[400px] font-Euclid text-[18px] text-white/[0.56]">Lorem ispum dolor sit amet lorem ispum dolor sit amet lorem ispum dolor sit amet lorem ispum dolor sit amet lorem ispum dolor sit amet lorem ispum dolor sit amet lorem ispum dolor sit amet lorem ispum dolor sit amet lorem ispum dolor sit amet</p>
+            <section id="features_3" class="flex items-center justify-between space-y-2 sm:flex-col">
+                <section class="w-96 md:w-80">
+                    <span class="font-Euclid text-[42px] xl:text-[32px] text-white">Lorem Ispum Dolor</span>
+                    <p class=" font-Euclid text-[18px] xl:text-[14px] md:text-[12px] text-white/[0.56]">Lorem ispum dolor sit amet lorem ispum dolor sit amet lorem ispum dolor sit amet lorem ispum dolor sit amet lorem ispum dolor sit amet lorem ispum dolor sit amet lorem ispum dolor sit amet lorem ispum dolor sit amet lorem ispum dolor sit amet</p>
                 </section>
-                <img src="./assets/imgs/features3.svg" alt="features">
+                <img src="./assets/imgs/features3.svg" alt="features" class="xl:w-96 xl:h-60 ">
             </section>
         </section>
     </main>
@@ -187,14 +221,14 @@
     <footer class="flex items-center bg-[#101113CC]/[0.83] w-full h-[125px] mt-[225px]">
         <section class="container flex justify-between">
             <section>
-                <span class="font-Euclid text-white/[0.56] text-[18px]">© 2023. All rights reserved.</span>
+                <span class="font-Euclid text-white/[0.56] text-[18px] md:text-[14px]">© 2023. All rights reserved.</span>
             </section>
             <section>
                 <ul class="flex justify-center items-center gap-7">
-                    <li><a href="#" class="font-Euclid text-white/[0.56] text-[18px] duration-300 hover:text-white">Team</a></li>
-                    <li><a href="#" class="font-Euclid text-white/[0.56] text-[18px] duration-300 hover:text-white">Terms of service</a></li>
-                    <li><a href="#" class="font-Euclid text-white/[0.56] text-[18px] duration-300 hover:text-white">Privacy Policy</a></li>
-                    <li><a href="#" class="font-Euclid text-white/[0.56] text-[18px] duration-300 hover:text-white">Support</a></li>
+                    <li><a href="#" class="font-Euclid text-white/[0.56] text-[18px] md:text-[12px] duration-300 hover:text-white">Team</a></li>
+                    <li><a href="#" class="font-Euclid text-white/[0.56] text-[18px] md:text-[12px] duration-300 hover:text-white">Terms of service</a></li>
+                    <li><a href="#" class="font-Euclid text-white/[0.56] text-[18px] md:text-[12px] duration-300 hover:text-white">Privacy Policy</a></li>
+                    <li><a href="#" class="font-Euclid text-white/[0.56] text-[18px] md:text-[12px] duration-300 hover:text-white">Support</a></li>
                 </ul>
             </section>
         </section>
