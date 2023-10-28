@@ -12,7 +12,21 @@
 
   <header class="container my-6">
     <nav class="flex justify-between items-center gap-52">
-      <a href="#" id="logo" class="bg-gray-500 w-[240px] h-[55px] rounded-[12px] flex justify-center items-center text-Euclid">Logo</a>
+      <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 54 54" fill="none">
+        <circle cx="27" cy="27" r="27" fill="#000B76"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.4227 25.8178C18.3561 30.9084 24.8552 36.4843 36.7734 13.5C40.8156 7.41124 52.9401 14.5499 50.2776 31.509C48.0675 42.1263 38.6114 50.1063 27.2812 50.1063C14.3112 50.1063 3.79688 39.649 3.79688 26.7492C3.79688 25.0825 3.97239 23.4566 4.30605 21.8887C7.1925 21.3306 9.75022 23.525 12.4227 25.8178Z" fill="url(#paint0_linear_2_931)"/>
+        <path d="M4.28906 21.9286C10.2656 6.92857 18.0703 8.08068 34.8047 17.1424L30.9375 23.7143C29.1797 26.4286 23.1328 35.5617 12.8672 26.7045C7.98394 22.4913 5.34375 21.4524 4.28906 21.9286Z" fill="url(#paint1_linear_2_931)"/>
+        <defs>
+            <linearGradient id="paint0_linear_2_931" x1="34.6567" y1="50.1422" x2="33.2526" y2="27.2404" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#07438D"/>
+                <stop offset="1" stop-color="#008BFF"/>
+            </linearGradient>
+            <linearGradient id="paint1_linear_2_931" x1="21.375" y1="29.9378" x2="22.3183" y2="8.86771" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#0A179C"/>
+                <stop offset="1" stop-color="#061EFD"/>
+            </linearGradient>
+        </defs>
+      </svg>
       <ul class="flex items-center justify-center gap-16">
           <section id="dropdownButton1" class="text-[22px] text-white font-Euclid">
               <button onclick="toggleDropdown1()" href="#" class="flex items-center gap-2">
@@ -875,7 +889,8 @@
       </section>
 
       <section id="profile" class="flex flex-col items-center mt-48">
-        <section class="flex gap-12">
+        
+        <section id="Underline" class="flex gap-12">
             <section  class="flex flex-col items-center">
                 <button class="font-Euclid text-[36px] text-white">Settings</button>
                 <figure class="bg-blue-500 w-full h-[6px] rounded-xl"></figure>
@@ -893,7 +908,7 @@
         </section>
       
 
-        <section id="activity" class="hidden">
+        <section id="Activity" class="hidden">
           <section class="bg-[#1515156B]/[0.42] rounded-[16px] space-y-8 w-[780px] h-[600px] mt-24 flex flex-col justify-center">
               <section class="flex justify-center">
                 <section class=" w-[701px] h-[374px] bg-blurpost bg-opacity-50 rounded-2xl backdrop-blur-[75px] flex flex-col space-y-4 items-center justify-center">
@@ -1041,11 +1056,9 @@
               </section>
           </section>
         </section>
-
-
-        <section id="Settings" class="bg-[#1515156B]/[0.42] rounded-[16px] w-[1600px] h-[945px] my-24 flex flex-col">
-            <section id="Profile" class="hidden">
-                <section class="flex flex-col text-center mt-12">
+        <section id="Settings" class="bg-[#1515156B]/[0.42] rounded-[16px] w-[1600px] h-full my-24 flex flex-col ">
+            <section id="Profile" class="py-16 hidden">
+                <section class="flex flex-col text-center">
                     <p class="font-Euclid text-white text-[36px]">Profile Information</p>
                     <span class="font-Euclid text-gray-400 text-[20]">Update your account information</span>
                 </section>
@@ -1122,11 +1135,11 @@
                 </section>
             </section>
             
-            <section id="Security" class="flex flex-col space-y-5">
+            <section id="Security" class="flex flex-col space-y-5 py-16">
                 
-                <section class="flex flex-col text-center mt-12">
-                <p class="font-Euclid text-white text-[36px]">Profile Information</p>
-                <span class="font-Euclid text-gray-400 text-[20]">Update your account information</span>
+                <section class="flex flex-col text-center">
+                  <p class="font-Euclid text-white text-[36px]">Profile Information</p>
+                  <span class="font-Euclid text-gray-400 text-[20]">Update your account information</span>
                 </section>
                 <section class="flex justify-center mt-14 space-x-5">
                   <button class="w-[158px] h-[59px] rounded-2xl border  border-blue-500 hover:bg-blue-500 duration-300 group">
@@ -1210,63 +1223,528 @@
                   </section>                  
                 </section>
                 
-                <section class="flex flex-col items-center justify-center">
-                    <section class="space-y-14">
-                        <section class="flex flex-col justify-start space-y-4 w-[1118px]">
-                            <span class="font-Euclid text-[64px] text-white">Recent logins</span>
-                            <button class="w-[277px] h-[49px] px-[31px] py-2.5 bg-rose-700 bg-opacity-20 rounded-[11px] justify-start items-center gap-2.5 inline-flex">
-                                <span class="font-Euclid text-[18px] text-rose-700 ">Sign  out from all devices</span>
-                            </button>
-                        </section>
-                        <section>
-                            <figure class="w-[1117px] h-[45px] bg-neutral-950 rounded-[37px] space-x-52">
-                                <section class="flex justify-between items-center gap-56 px-16">
-                                    
-                                    <span class="font-Euclid text-[16px] opacity-60 text-white text-opacity-80 w-[100px]">Login device</span>
-                                        
-                                    
-                                    <span class="font-Euclid text-[16px] opacity-60 text-white text-opacity-80 w-[100px]">Country</span>
-                                    <span class="font-Euclid text-[16px] opacity-60 text-white text-opacity-80 w-[100px]">Login IP address</span>
-                                    <span class="font-Euclid text-[16px] opacity-60 text-white text-opacity-80 w-[100px]">Login date</span>
-                                </section>
-    
-                            </figure>
-                        </section>
-                    </section>
-                    <section>
-                        <figure class="w-[1117px] h-[60px] flex items-center gap-40 px-4 bg-neutral-950 rounded-xl">
-                            
-                            <section id="loginDevice" class="flex gap-1 items-center">
-                                <img src="/assets/imgs/windows 10.png" alt="">
-                                <span class="font-Euclid text-[18px] text-white text-lg font-medium leading-[29.18px] tracking-tight">Windows 10</span>
-                            </section>
-                            <section id="Country" class="flex gap-1 items-center">
-                                <img src="/assets/imgs/RUSSIA.png" alt="">
-                                <span class="font-Euclid text-[18px] text-white text-lg font-medium leading-[29.18px] tracking-tight">USA</span>
-                            </section>
-                            <section id="LoginIP " class="flex ml-14 ">
-                                <span class="font-Euclid text-[18px] text-white text-lg font-medium leading-[29.18px] tracking-tight">From 213.134.168.14</span>
-                            </section>
-                            <section id="LoginDate" class="flex">
-                                <span class="font-Euclid text-[18px] text-white text-lg font-medium leading-[29.18px] tracking-tight">23.08.2023 18:17:03</span>
-                            </section>
-                        </figure>
-                    </section>
+                <section class="flex flex-col items-center justify-center ">
+                  <section class="flex flex-col justify-start w-[1118px] mt-16">
+                      <span class="font-Euclid text-[64px] text-white">Recent logins</span>
+                      <button class="w-[277px] h-[49px] px-[31px] bg-rose-700/[0.2] rounded-[11px] justify-start items-center inline-flex">
+                          <span class="font-Euclid text-[18px] text-rose-700 ">Sign  out from all devices</span>
+                      </button>
+                  </section>
+                  
+                  <section>
+                    <figure class="w-[1117px] h-[45px] bg-neutral-950 rounded-[37px] flex mt-14">
+                      <section class="flex items-center gap-52 px-16">
+                          <p class="font-Euclid text-[16px] opacity-60 text-white text-opacity-80 ">Login device</p>
+                          <p class="font-Euclid text-[16px] opacity-60 text-white text-opacity-80 ">Country</p>
+                          <p class="font-Euclid text-[16px] opacity-60 text-white text-opacity-80 ">Login IP address</p>
+                          <p class="font-Euclid text-[16px] opacity-60 text-white text-opacity-80 ">Login date</p>
+                      </section>
+                    </figure>
 
+                    
+                    <section class="flex flex-col gap-4">
+                      <figure class="w-[1117px] h-[60px] flex items-center mt-8 bg-neutral-950 rounded-xl gap-[150px] px-10">
+                      
+                        <section id="LoginDevice" class="flex gap-1 items-center">
+                            <img src="/assets/imgs/windows 10.png" alt="">
+                            <span class="font-Euclid text-[18px] text-white text-base font-medium leading-[29.18px] tracking-tight">Windows 10</span>
+                        </section>
+                        <section id="Country" class="flex gap-1 items-center ml-11">
+                            <img src="/assets/imgs/RUSSIA.png" alt="">
+                            <span class="font-Euclid text-[18px] text-white text-base font-medium leading-[29.18px] tracking-tight">USA</span>
+                        </section>
+                        <section id="LoginIP " class="flex ml-[68px]">
+                            <span class="font-Euclid text-[18px] text-white text-base font-medium leading-[29.18px] tracking-tight">From 213.134.168.14</span>
+                        </section>
+                        <section id="LoginDate" class="flex">
+                            <span class="font-Euclid text-[18px] text-white text-base font-medium leading-[29.18px] tracking-tight">23.08.2023 18:17:03</span>
+                        </section>
+  
+                      </figure>
+                      <figure class="w-[1117px] h-[60px] flex items-center bg-neutral-950 rounded-xl gap-[150px] px-10">
+                        
+                        <section id="LoginDevice" class="flex gap-1 items-center">
+                            <img src="/assets/imgs/windows 10.png" alt="">
+                            <span class="font-Euclid text-[18px] text-white text-base font-medium leading-[29.18px] tracking-tight">Windows 10</span>
+                        </section>
+                        <section id="Country" class="flex gap-1 items-center ml-11">
+                            <img src="/assets/imgs/RUSSIA.png" alt="">
+                            <span class="font-Euclid text-[18px] text-white text-base font-medium leading-[29.18px] tracking-tight">USA</span>
+                        </section>
+                        <section id="LoginIP " class="flex ml-[68px]">
+                            <span class="font-Euclid text-[18px] text-white text-base font-medium leading-[29.18px] tracking-tight">From 213.134.168.14</span>
+                        </section>
+                        <section id="LoginDate" class="flex">
+                            <span class="font-Euclid text-[18px] text-white text-base font-medium leading-[29.18px] tracking-tight">23.08.2023 18:17:03</span>
+                        </section>
+  
+                      </figure>
+                      <figure class="w-[1117px] h-[60px] flex items-center bg-neutral-950 rounded-xl gap-[150px] px-10">
+                        
+                        <section id="LoginDevice" class="flex gap-1 items-center">
+                            <img src="/assets/imgs/windows 10.png" alt="">
+                            <span class="font-Euclid text-[18px] text-white text-base font-medium leading-[29.18px] tracking-tight">Windows 10</span>
+                        </section>
+                        <section id="Country" class="flex gap-1 items-center ml-11">
+                            <img src="/assets/imgs/RUSSIA.png" alt="">
+                            <span class="font-Euclid text-[18px] text-white text-base font-medium leading-[29.18px] tracking-tight">USA</span>
+                        </section>
+                        <section id="LoginIP " class="flex ml-[68px]">
+                            <span class="font-Euclid text-[18px] text-white text-base font-medium leading-[29.18px] tracking-tight">From 213.134.168.14</span>
+                        </section>
+                        <section id="LoginDate" class="flex">
+                            <span class="font-Euclid text-[18px] text-white text-base font-medium leading-[29.18px] tracking-tight">23.08.2023 18:17:03</span>
+                        </section>
+  
+                      </figure>
+                      <figure class="w-[1117px] h-[60px] flex items-center bg-neutral-950 rounded-xl gap-[150px] px-10">
+                        
+                        <section id="LoginDevice" class="flex gap-1 items-center">
+                            <img src="/assets/imgs/windows 10.png" alt="">
+                            <span class="font-Euclid text-[18px] text-white text-base font-medium leading-[29.18px] tracking-tight">Windows 10</span>
+                        </section>
+                        <section id="Country" class="flex gap-1 items-center ml-11">
+                            <img src="/assets/imgs/RUSSIA.png" alt="">
+                            <span class="font-Euclid text-[18px] text-white text-base font-medium leading-[29.18px] tracking-tight">USA</span>
+                        </section>
+                        <section id="LoginIP " class="flex ml-[68px]">
+                            <span class="font-Euclid text-[18px] text-white text-base font-medium leading-[29.18px] tracking-tight">From 213.134.168.14</span>
+                        </section>
+                        <section id="LoginDate" class="flex">
+                            <span class="font-Euclid text-[18px] text-white text-base font-medium leading-[29.18px] tracking-tight">23.08.2023 18:17:03</span>
+                        </section>
+  
+                      </figure>
+                      <figure class="w-[1117px] h-[60px] flex items-center bg-neutral-950 rounded-xl gap-[150px] px-10">
+                        
+                        <section id="LoginDevice" class="flex gap-1 items-center">
+                            <img src="/assets/imgs/windows 10.png" alt="">
+                            <span class="font-Euclid text-[18px] text-white text-base font-medium leading-[29.18px] tracking-tight">Windows 10</span>
+                        </section>
+                        <section id="Country" class="flex gap-1 items-center ml-11">
+                            <img src="/assets/imgs/RUSSIA.png" alt="">
+                            <span class="font-Euclid text-[18px] text-white text-base font-medium leading-[29.18px] tracking-tight">USA</span>
+                        </section>
+                        <section id="LoginIP " class="flex ml-[68px]">
+                            <span class="font-Euclid text-[18px] text-white text-base font-medium leading-[29.18px] tracking-tight">From 213.134.168.14</span>
+                        </section>
+                        <section id="LoginDate" class="flex">
+                            <span class="font-Euclid text-[18px] text-white text-base font-medium leading-[29.18px] tracking-tight">23.08.2023 18:17:03</span>
+                        </section>
+  
+                      </figure>
+                      <figure class="w-[1117px] h-[60px] flex items-center bg-neutral-950 rounded-xl gap-[150px] px-10">
+                        
+                        <section id="LoginDevice" class="flex gap-1 items-center">
+                            <img src="/assets/imgs/windows 10.png" alt="">
+                            <span class="font-Euclid text-[18px] text-white text-base font-medium leading-[29.18px] tracking-tight">Windows 10</span>
+                        </section>
+                        <section id="Country" class="flex gap-1 items-center ml-11">
+                            <img src="/assets/imgs/RUSSIA.png" alt="">
+                            <span class="font-Euclid text-[18px] text-white text-base font-medium leading-[29.18px] tracking-tight">USA</span>
+                        </section>
+                        <section id="LoginIP " class="flex ml-[68px]">
+                            <span class="font-Euclid text-[18px] text-white text-base font-medium leading-[29.18px] tracking-tight">From 213.134.168.14</span>
+                        </section>
+                        <section id="LoginDate" class="flex">
+                            <span class="font-Euclid text-[18px] text-white text-base font-medium leading-[29.18px] tracking-tight">23.08.2023 18:17:03</span>
+                        </section>
+  
+                      </figure>
+                    </section>
+                  
+                  </section>
                 </section>
                 
                 
 
             </section>
 
-        </section>
+            <section id="History" class="flex flex-col space-y-5 py-16 hidden">
+                
+              <section class="flex flex-col text-center">
+              <p class="font-Euclid text-white text-[36px]">Profile Information</p>
+              <span class="font-Euclid text-gray-400 text-[20]">Update your account information</span>
+              </section>
+              
+              <section class="flex justify-center mt-14 space-x-5">
+                <button class="w-[158px] h-[59px] rounded-2xl border  border-blue-500 hover:bg-blue-500 duration-300 group">
+                    <p class="font-Euclid text-white/60 text-[32px] group-hover:text-white duration-300">Security</p>
+                </button>
+                <button class="w-[158px] h-[59px] rounded-2xl border border-blue-500 hover:bg-blue-500 hover:text-white duration-300 group">
+                    <p class="font-Euclid text-[32px]  text-white/60  group-hover:text-white duration-300">Profile</p>
+                </button>
+                <button class="w-[158px] h-[59px] rounded-2xl border border-blue-500 hover:bg-blue-500 hover:text-white duration-300 group">
+                    <p class="font-Euclid text-white/60 text-[32px] group-hover:text-white duration-300">History</p>
+                </button>
+              </section>
+              
+              
+              <section class="flex flex-col justify-center items-center">
+                <section class="w-[1404px] space-y-12">
+                  <span class="text-white text-[49px] font-medium font-Euclid">Last transactions</span>
+                  <section class="flex justify-start gap-6">
+                    <button class="w-64 h-[53px] py-[21px] rounded-2xl border border-zinc-700 justify-center items-center gap-2.5 inline-flex group hover:bg-blue-500 duration-300"><span class="text-white/[0.56] text-2xl font-normal font-Euclid group-hover:text-white duration-300">All</span></button>
+                    <button class="w-64 h-[53px] py-[21px] rounded-2xl border border-zinc-700 justify-center items-center gap-2.5 inline-flex group hover:bg-blue-500 duration-300"><span class="text-white/[0.56] text-2xl font-normal font-Euclid group-hover:text-white duration-300">Withdraw</span></button>
+                    <button class="w-64 h-[53px] py-[21px] rounded-2xl border border-zinc-700 justify-center items-center gap-2.5 inline-flex group hover:bg-blue-500 duration-300"><span class="text-white/[0.56] text-2xl font-normal font-Euclid group-hover:text-white duration-300">Purchase</span></button>
+                  </section>
+                  <section>
+                    <section class="w-[1404px] h-[42px] bg-zinc-950 rounded-2xl flex items-center px-12 py-2 gap-64">
+                      <span class="text-white/[0.56] text-lg font-normal font-Euclid">Plan</span>
+                      <span class="text-white/[0.56] text-lg font-normal font-Euclid">Amount</span>
+                      <span class="text-white/[0.56] text-lg font-normal font-Euclid">Status</span>
+                      <span class="text-white/[0.56] text-lg font-normal font-Euclid ml-20">Date</span>
+                    </section>
+                    <section class="space-y-3.5 pt-6">
+                      
+                      <figure class="w-[1404px] h-[79px] bg-neutral-900 rounded-2xl flex items-center gap-24 py-7 pl-9">
+                          
+                        <section id="Plan" class="flex items-center">
+                            <svg width="45" height="44" viewBox="0 0 45 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <g clip-path="url(#clip0_46_303)">
+                              <path d="M20.277 31.167C20.8552 31.4194 21.4794 31.5496 22.1103 31.5496C22.7412 31.5496 23.3654 31.4194 23.9436 31.167" stroke="#BEF264" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M22.1103 5.5C13.5596 5.5 8.55098 9.7735 7.69664 15.7575C6.83949 21.2846 8.15337 26.9291 11.3633 31.5095C12.9082 33.7678 14.9053 35.6807 17.2281 37.1268C20.2825 38.9602 23.9455 38.9602 26.9998 37.1268C29.3226 35.6807 31.3198 33.7678 32.8646 31.5095C36.0616 26.9233 37.3742 21.2841 36.5313 15.7575C35.677 9.77167 30.6683 5.5 22.1176 5.5H22.1103Z" stroke="#BEF264" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M14.777 20.167L18.4436 23.8337" stroke="#BEF264" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M29.4436 20.167L25.777 23.8337" stroke="#BEF264" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                              </g>
+                              <defs>
+                              <clipPath id="clip0_46_303">
+                              <rect width="44" height="44" fill="white" transform="translate(0.110352)"/>
+                              </clipPath>
+                              </defs>
+                            </svg>
+                            <section>
+                              <p class="text-white/[0.56] text-sm font-normal font-Euclid">ALN</p>
+                              <p class="text-white text-sm font-normal font-Euclid">ALIEN PLAN</p>
+                            </section>                              
+                        </section>
     
-      
-
-        <section id="subscription" class="bg-[#1515156B]/[0.42] rounded-[16px] space-y-8 w-[780px] h-[600px] mt-24 flex flex-col justify-center hidden">
-        
-
+                        <section id="Amount" class="flex gap-1 text-center ml-[81px]">
+                          <p class="text-white text-xl font-normal font-Euclid">2.355</p>
+                          <p class="text-blue-500 text-xl font-normal font-Euclid">RUB</p>
+                        </section>
+    
+                        <section id="Status" class="space-x-2 ml-[135px]">
+                          <figure class="w-36 h-11 bg-emerald-400 rounded-2xl justify-center items-center inline-flex"><span class="text-white text-xl font-medium font-Euclid">Confirm</span></figure>
+                          <figure class="w-36 h-11 bg-gray-800 rounded-2xl justify-center items-center inline-flex"><span class="text-white text-xl font-medium font-Euclid">Purchase</span></figure>
+                        </section>
+    
+                        <section id="Date">
+                          <span class="w-40 text-white text-xl font-medium font-Euclid">28.08.2023 10:02</span>
+                        </section>
+    
+                        <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M2.67256 12.7132C2.52604 12.4975 2.45278 12.3897 2.41177 12.2234C2.38097 12.0985 2.38097 11.9015 2.41177 11.7766C2.45278 11.6103 2.52604 11.5025 2.67256 11.2868C3.88334 9.50484 7.48734 5 12.9796 5C18.4719 5 22.0759 9.50484 23.2867 11.2868C23.4332 11.5025 23.5065 11.6103 23.5475 11.7766C23.5783 11.9015 23.5783 12.0985 23.5475 12.2234C23.5065 12.3897 23.4332 12.4975 23.2867 12.7132C22.0759 14.4952 18.4719 19 12.9796 19C7.48734 19 3.88335 14.4952 2.67256 12.7132Z" stroke="white" stroke-opacity="0.2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M12.9796 15C14.7622 15 16.2072 13.6569 16.2072 12C16.2072 10.3431 14.7622 9 12.9796 9C11.1971 9 9.75204 10.3431 9.75204 12C9.75204 13.6569 11.1971 15 12.9796 15Z" stroke="white" stroke-opacity="0.2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                          
+                      </figure>
+                      <figure class="w-[1404px] h-[79px] bg-neutral-900 rounded-2xl flex items-center gap-24 py-7 pl-9">
+                          
+                        <section id="Plan" class="flex items-center">
+                            <svg width="45" height="44" viewBox="0 0 45 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <g clip-path="url(#clip0_46_303)">
+                              <path d="M20.277 31.167C20.8552 31.4194 21.4794 31.5496 22.1103 31.5496C22.7412 31.5496 23.3654 31.4194 23.9436 31.167" stroke="#BEF264" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M22.1103 5.5C13.5596 5.5 8.55098 9.7735 7.69664 15.7575C6.83949 21.2846 8.15337 26.9291 11.3633 31.5095C12.9082 33.7678 14.9053 35.6807 17.2281 37.1268C20.2825 38.9602 23.9455 38.9602 26.9998 37.1268C29.3226 35.6807 31.3198 33.7678 32.8646 31.5095C36.0616 26.9233 37.3742 21.2841 36.5313 15.7575C35.677 9.77167 30.6683 5.5 22.1176 5.5H22.1103Z" stroke="#BEF264" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M14.777 20.167L18.4436 23.8337" stroke="#BEF264" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M29.4436 20.167L25.777 23.8337" stroke="#BEF264" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                              </g>
+                              <defs>
+                              <clipPath id="clip0_46_303">
+                              <rect width="44" height="44" fill="white" transform="translate(0.110352)"/>
+                              </clipPath>
+                              </defs>
+                            </svg>
+                            <section>
+                              <p class="text-white/[0.56] text-sm font-normal font-Euclid">ALN</p>
+                              <p class="text-white text-sm font-normal font-Euclid">ALIEN PLAN</p>
+                            </section>                              
+                        </section>
+    
+                        <section id="Amount" class="flex gap-1 text-center ml-[81px]">
+                          <p class="text-white text-xl font-normal font-Euclid">2.355</p>
+                          <p class="text-blue-500 text-xl font-normal font-Euclid">RUB</p>
+                        </section>
+    
+                        <section id="Status" class="space-x-2 ml-[135px]">
+                          <figure class="w-36 h-11 bg-yellow-400 rounded-2xl justify-center items-center inline-flex"><span class="text-white text-xl font-medium font-Euclid">Pending</span></figure>
+                          <figure class="w-36 h-11 bg-blue-500 rounded-2xl justify-center items-center inline-flex"><span class="text-white text-xl font-medium font-Euclid">Withdraw</span></figure>
+                        </section>
+    
+                        <section id="Date">
+                          <span class="w-40 text-white text-xl font-medium font-Euclid">28.08.2023 10:02</span>
+                        </section>
+    
+                        <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M2.67256 12.7132C2.52604 12.4975 2.45278 12.3897 2.41177 12.2234C2.38097 12.0985 2.38097 11.9015 2.41177 11.7766C2.45278 11.6103 2.52604 11.5025 2.67256 11.2868C3.88334 9.50484 7.48734 5 12.9796 5C18.4719 5 22.0759 9.50484 23.2867 11.2868C23.4332 11.5025 23.5065 11.6103 23.5475 11.7766C23.5783 11.9015 23.5783 12.0985 23.5475 12.2234C23.5065 12.3897 23.4332 12.4975 23.2867 12.7132C22.0759 14.4952 18.4719 19 12.9796 19C7.48734 19 3.88335 14.4952 2.67256 12.7132Z" stroke="white" stroke-opacity="0.2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M12.9796 15C14.7622 15 16.2072 13.6569 16.2072 12C16.2072 10.3431 14.7622 9 12.9796 9C11.1971 9 9.75204 10.3431 9.75204 12C9.75204 13.6569 11.1971 15 12.9796 15Z" stroke="white" stroke-opacity="0.2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                          
+                      </figure>
+                      <figure class="w-[1404px] h-[79px] bg-neutral-900 rounded-2xl flex items-center gap-24 py-7 pl-9">
+                          
+                        <section id="Plan" class="flex items-center">
+                            <svg width="45" height="44" viewBox="0 0 45 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <g clip-path="url(#clip0_46_303)">
+                              <path d="M20.277 31.167C20.8552 31.4194 21.4794 31.5496 22.1103 31.5496C22.7412 31.5496 23.3654 31.4194 23.9436 31.167" stroke="#BEF264" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M22.1103 5.5C13.5596 5.5 8.55098 9.7735 7.69664 15.7575C6.83949 21.2846 8.15337 26.9291 11.3633 31.5095C12.9082 33.7678 14.9053 35.6807 17.2281 37.1268C20.2825 38.9602 23.9455 38.9602 26.9998 37.1268C29.3226 35.6807 31.3198 33.7678 32.8646 31.5095C36.0616 26.9233 37.3742 21.2841 36.5313 15.7575C35.677 9.77167 30.6683 5.5 22.1176 5.5H22.1103Z" stroke="#BEF264" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M14.777 20.167L18.4436 23.8337" stroke="#BEF264" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M29.4436 20.167L25.777 23.8337" stroke="#BEF264" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                              </g>
+                              <defs>
+                              <clipPath id="clip0_46_303">
+                              <rect width="44" height="44" fill="white" transform="translate(0.110352)"/>
+                              </clipPath>
+                              </defs>
+                            </svg>
+                            <section>
+                              <p class="text-white/[0.56] text-sm font-normal font-Euclid">ALN</p>
+                              <p class="text-white text-sm font-normal font-Euclid">ALIEN PLAN</p>
+                            </section>                              
+                        </section>
+    
+                        <section id="Amount" class="flex gap-1 text-center ml-[81px]">
+                          <p class="text-white text-xl font-normal font-Euclid">2.355</p>
+                          <p class="text-blue-500 text-xl font-normal font-Euclid">RUB</p>
+                        </section>
+    
+                        <section id="Status" class="space-x-2 ml-[135px]">
+                          <figure class="w-36 h-11 bg-rose-500 rounded-2xl justify-center items-center inline-flex"><span class="text-white text-xl font-medium font-Euclid">Cancelled</span></figure>
+                          <figure class="w-36 h-11 bg-gray-800 rounded-2xl justify-center items-center inline-flex"><span class="text-white text-xl font-medium font-Euclid">Purchase</span></figure>
+                        </section>
+    
+                        <section id="Date">
+                          <span class="w-40 text-white text-xl font-medium font-Euclid">28.08.2023 10:02</span>
+                        </section>
+    
+                        <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M2.67256 12.7132C2.52604 12.4975 2.45278 12.3897 2.41177 12.2234C2.38097 12.0985 2.38097 11.9015 2.41177 11.7766C2.45278 11.6103 2.52604 11.5025 2.67256 11.2868C3.88334 9.50484 7.48734 5 12.9796 5C18.4719 5 22.0759 9.50484 23.2867 11.2868C23.4332 11.5025 23.5065 11.6103 23.5475 11.7766C23.5783 11.9015 23.5783 12.0985 23.5475 12.2234C23.5065 12.3897 23.4332 12.4975 23.2867 12.7132C22.0759 14.4952 18.4719 19 12.9796 19C7.48734 19 3.88335 14.4952 2.67256 12.7132Z" stroke="white" stroke-opacity="0.2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M12.9796 15C14.7622 15 16.2072 13.6569 16.2072 12C16.2072 10.3431 14.7622 9 12.9796 9C11.1971 9 9.75204 10.3431 9.75204 12C9.75204 13.6569 11.1971 15 12.9796 15Z" stroke="white" stroke-opacity="0.2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                          
+                      </figure>
+                      <figure class="w-[1404px] h-[79px] bg-neutral-900 rounded-2xl flex items-center gap-24 py-7 pl-9">
+                          
+                        <section id="Plan" class="flex items-center">
+                            <svg width="45" height="44" viewBox="0 0 45 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <g clip-path="url(#clip0_46_303)">
+                              <path d="M20.277 31.167C20.8552 31.4194 21.4794 31.5496 22.1103 31.5496C22.7412 31.5496 23.3654 31.4194 23.9436 31.167" stroke="#BEF264" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M22.1103 5.5C13.5596 5.5 8.55098 9.7735 7.69664 15.7575C6.83949 21.2846 8.15337 26.9291 11.3633 31.5095C12.9082 33.7678 14.9053 35.6807 17.2281 37.1268C20.2825 38.9602 23.9455 38.9602 26.9998 37.1268C29.3226 35.6807 31.3198 33.7678 32.8646 31.5095C36.0616 26.9233 37.3742 21.2841 36.5313 15.7575C35.677 9.77167 30.6683 5.5 22.1176 5.5H22.1103Z" stroke="#BEF264" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M14.777 20.167L18.4436 23.8337" stroke="#BEF264" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M29.4436 20.167L25.777 23.8337" stroke="#BEF264" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                              </g>
+                              <defs>
+                              <clipPath id="clip0_46_303">
+                              <rect width="44" height="44" fill="white" transform="translate(0.110352)"/>
+                              </clipPath>
+                              </defs>
+                            </svg>
+                            <section>
+                              <p class="text-white/[0.56] text-sm font-normal font-Euclid">ALN</p>
+                              <p class="text-white text-sm font-normal font-Euclid">ALIEN PLAN</p>
+                            </section>                              
+                        </section>
+    
+                        <section id="Amount" class="flex gap-1 text-center ml-[81px]">
+                          <p class="text-white text-xl font-normal font-Euclid">2.355</p>
+                          <p class="text-blue-500 text-xl font-normal font-Euclid">RUB</p>
+                        </section>
+    
+                        <section id="Status" class="space-x-2 ml-[135px]">
+                          <figure class="w-36 h-11 bg-yellow-400 rounded-2xl justify-center items-center inline-flex"><span class="text-white text-xl font-medium font-Euclid">Pending</span></figure>
+                          <figure class="w-36 h-11 bg-blue-500 rounded-2xl justify-center items-center inline-flex"><span class="text-white text-xl font-medium font-Euclid">Withdraw</span></figure>
+                        </section>
+    
+                        <section id="Date">
+                          <span class="w-40 text-white text-xl font-medium font-Euclid">28.08.2023 10:02</span>
+                        </section>
+    
+                        <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M2.67256 12.7132C2.52604 12.4975 2.45278 12.3897 2.41177 12.2234C2.38097 12.0985 2.38097 11.9015 2.41177 11.7766C2.45278 11.6103 2.52604 11.5025 2.67256 11.2868C3.88334 9.50484 7.48734 5 12.9796 5C18.4719 5 22.0759 9.50484 23.2867 11.2868C23.4332 11.5025 23.5065 11.6103 23.5475 11.7766C23.5783 11.9015 23.5783 12.0985 23.5475 12.2234C23.5065 12.3897 23.4332 12.4975 23.2867 12.7132C22.0759 14.4952 18.4719 19 12.9796 19C7.48734 19 3.88335 14.4952 2.67256 12.7132Z" stroke="white" stroke-opacity="0.2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M12.9796 15C14.7622 15 16.2072 13.6569 16.2072 12C16.2072 10.3431 14.7622 9 12.9796 9C11.1971 9 9.75204 10.3431 9.75204 12C9.75204 13.6569 11.1971 15 12.9796 15Z" stroke="white" stroke-opacity="0.2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                          
+                      </figure>
+                      <figure class="w-[1404px] h-[79px] bg-neutral-900 rounded-2xl flex items-center gap-24 py-7 pl-9">
+                          
+                        <section id="Plan" class="flex items-center">
+                            <svg width="45" height="44" viewBox="0 0 45 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <g clip-path="url(#clip0_46_303)">
+                              <path d="M20.277 31.167C20.8552 31.4194 21.4794 31.5496 22.1103 31.5496C22.7412 31.5496 23.3654 31.4194 23.9436 31.167" stroke="#BEF264" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M22.1103 5.5C13.5596 5.5 8.55098 9.7735 7.69664 15.7575C6.83949 21.2846 8.15337 26.9291 11.3633 31.5095C12.9082 33.7678 14.9053 35.6807 17.2281 37.1268C20.2825 38.9602 23.9455 38.9602 26.9998 37.1268C29.3226 35.6807 31.3198 33.7678 32.8646 31.5095C36.0616 26.9233 37.3742 21.2841 36.5313 15.7575C35.677 9.77167 30.6683 5.5 22.1176 5.5H22.1103Z" stroke="#BEF264" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M14.777 20.167L18.4436 23.8337" stroke="#BEF264" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M29.4436 20.167L25.777 23.8337" stroke="#BEF264" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                              </g>
+                              <defs>
+                              <clipPath id="clip0_46_303">
+                              <rect width="44" height="44" fill="white" transform="translate(0.110352)"/>
+                              </clipPath>
+                              </defs>
+                            </svg>
+                            <section>
+                              <p class="text-white/[0.56] text-sm font-normal font-Euclid">ALN</p>
+                              <p class="text-white text-sm font-normal font-Euclid">ALIEN PLAN</p>
+                            </section>                              
+                        </section>
+    
+                        <section id="Amount" class="flex gap-1 text-center ml-[81px]">
+                          <p class="text-white text-xl font-normal font-Euclid">2.355</p>
+                          <p class="text-blue-500 text-xl font-normal font-Euclid">RUB</p>
+                        </section>
+    
+                        <section id="Status" class="space-x-2 ml-[135px]">
+                          <figure class="w-36 h-11 bg-yellow-400 rounded-2xl justify-center items-center inline-flex"><span class="text-white text-xl font-medium font-Euclid">Pending</span></figure>
+                          <figure class="w-36 h-11 bg-blue-500 rounded-2xl justify-center items-center inline-flex"><span class="text-white text-xl font-medium font-Euclid">Withdraw</span></figure>
+                        </section>
+    
+                        <section id="Date">
+                          <span class="w-40 text-white text-xl font-medium font-Euclid">28.08.2023 10:02</span>
+                        </section>
+    
+                        <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M2.67256 12.7132C2.52604 12.4975 2.45278 12.3897 2.41177 12.2234C2.38097 12.0985 2.38097 11.9015 2.41177 11.7766C2.45278 11.6103 2.52604 11.5025 2.67256 11.2868C3.88334 9.50484 7.48734 5 12.9796 5C18.4719 5 22.0759 9.50484 23.2867 11.2868C23.4332 11.5025 23.5065 11.6103 23.5475 11.7766C23.5783 11.9015 23.5783 12.0985 23.5475 12.2234C23.5065 12.3897 23.4332 12.4975 23.2867 12.7132C22.0759 14.4952 18.4719 19 12.9796 19C7.48734 19 3.88335 14.4952 2.67256 12.7132Z" stroke="white" stroke-opacity="0.2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M12.9796 15C14.7622 15 16.2072 13.6569 16.2072 12C16.2072 10.3431 14.7622 9 12.9796 9C11.1971 9 9.75204 10.3431 9.75204 12C9.75204 13.6569 11.1971 15 12.9796 15Z" stroke="white" stroke-opacity="0.2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                          
+                      </figure>
+                      <figure class="w-[1404px] h-[79px] bg-neutral-900 rounded-2xl flex items-center gap-24 py-7 pl-9">
+                          
+                        <section id="Plan" class="flex items-center">
+                            <svg width="45" height="44" viewBox="0 0 45 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <g clip-path="url(#clip0_46_303)">
+                              <path d="M20.277 31.167C20.8552 31.4194 21.4794 31.5496 22.1103 31.5496C22.7412 31.5496 23.3654 31.4194 23.9436 31.167" stroke="#BEF264" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M22.1103 5.5C13.5596 5.5 8.55098 9.7735 7.69664 15.7575C6.83949 21.2846 8.15337 26.9291 11.3633 31.5095C12.9082 33.7678 14.9053 35.6807 17.2281 37.1268C20.2825 38.9602 23.9455 38.9602 26.9998 37.1268C29.3226 35.6807 31.3198 33.7678 32.8646 31.5095C36.0616 26.9233 37.3742 21.2841 36.5313 15.7575C35.677 9.77167 30.6683 5.5 22.1176 5.5H22.1103Z" stroke="#BEF264" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M14.777 20.167L18.4436 23.8337" stroke="#BEF264" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M29.4436 20.167L25.777 23.8337" stroke="#BEF264" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                              </g>
+                              <defs>
+                              <clipPath id="clip0_46_303">
+                              <rect width="44" height="44" fill="white" transform="translate(0.110352)"/>
+                              </clipPath>
+                              </defs>
+                            </svg>
+                            <section>
+                              <p class="text-white/[0.56] text-sm font-normal font-Euclid">ALN</p>
+                              <p class="text-white text-sm font-normal font-Euclid">ALIEN PLAN</p>
+                            </section>                              
+                        </section>
+    
+                        <section id="Amount" class="flex gap-1 text-center ml-[81px]">
+                          <p class="text-white text-xl font-normal font-Euclid">2.355</p>
+                          <p class="text-blue-500 text-xl font-normal font-Euclid">RUB</p>
+                        </section>
+    
+                        <section id="Status" class="space-x-2 ml-[135px]">
+                          <figure class="w-36 h-11 bg-yellow-400 rounded-2xl justify-center items-center inline-flex"><span class="text-white text-xl font-medium font-Euclid">Pending</span></figure>
+                          <figure class="w-36 h-11 bg-blue-500 rounded-2xl justify-center items-center inline-flex"><span class="text-white text-xl font-medium font-Euclid">Withdraw</span></figure>
+                        </section>
+    
+                        <section id="Date">
+                          <span class="w-40 text-white text-xl font-medium font-Euclid">28.08.2023 10:02</span>
+                        </section>
+    
+                        <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M2.67256 12.7132C2.52604 12.4975 2.45278 12.3897 2.41177 12.2234C2.38097 12.0985 2.38097 11.9015 2.41177 11.7766C2.45278 11.6103 2.52604 11.5025 2.67256 11.2868C3.88334 9.50484 7.48734 5 12.9796 5C18.4719 5 22.0759 9.50484 23.2867 11.2868C23.4332 11.5025 23.5065 11.6103 23.5475 11.7766C23.5783 11.9015 23.5783 12.0985 23.5475 12.2234C23.5065 12.3897 23.4332 12.4975 23.2867 12.7132C22.0759 14.4952 18.4719 19 12.9796 19C7.48734 19 3.88335 14.4952 2.67256 12.7132Z" stroke="white" stroke-opacity="0.2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M12.9796 15C14.7622 15 16.2072 13.6569 16.2072 12C16.2072 10.3431 14.7622 9 12.9796 9C11.1971 9 9.75204 10.3431 9.75204 12C9.75204 13.6569 11.1971 15 12.9796 15Z" stroke="white" stroke-opacity="0.2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                          
+                      </figure>
+                      <figure class="w-[1404px] h-[79px] bg-neutral-900 rounded-2xl flex items-center gap-24 py-7 pl-9">
+                          
+                        <section id="Plan" class="flex items-center">
+                            <svg width="45" height="44" viewBox="0 0 45 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <g clip-path="url(#clip0_46_303)">
+                              <path d="M20.277 31.167C20.8552 31.4194 21.4794 31.5496 22.1103 31.5496C22.7412 31.5496 23.3654 31.4194 23.9436 31.167" stroke="#BEF264" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M22.1103 5.5C13.5596 5.5 8.55098 9.7735 7.69664 15.7575C6.83949 21.2846 8.15337 26.9291 11.3633 31.5095C12.9082 33.7678 14.9053 35.6807 17.2281 37.1268C20.2825 38.9602 23.9455 38.9602 26.9998 37.1268C29.3226 35.6807 31.3198 33.7678 32.8646 31.5095C36.0616 26.9233 37.3742 21.2841 36.5313 15.7575C35.677 9.77167 30.6683 5.5 22.1176 5.5H22.1103Z" stroke="#BEF264" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M14.777 20.167L18.4436 23.8337" stroke="#BEF264" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M29.4436 20.167L25.777 23.8337" stroke="#BEF264" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                              </g>
+                              <defs>
+                              <clipPath id="clip0_46_303">
+                              <rect width="44" height="44" fill="white" transform="translate(0.110352)"/>
+                              </clipPath>
+                              </defs>
+                            </svg>
+                            <section>
+                              <p class="text-white/[0.56] text-sm font-normal font-Euclid">ALN</p>
+                              <p class="text-white text-sm font-normal font-Euclid">ALIEN PLAN</p>
+                            </section>                              
+                        </section>
+    
+                        <section id="Amount" class="flex gap-1 text-center ml-[81px]">
+                          <p class="text-white text-xl font-normal font-Euclid">2.355</p>
+                          <p class="text-blue-500 text-xl font-normal font-Euclid">RUB</p>
+                        </section>
+    
+                        <section id="Status" class="space-x-2 ml-[135px]">
+                          <figure class="w-36 h-11 bg-emerald-400 rounded-2xl justify-center items-center inline-flex"><span class="text-white text-xl font-medium font-Euclid">Confirm</span></figure>
+                          <figure class="w-36 h-11 bg-blue-500 rounded-2xl justify-center items-center inline-flex"><span class="text-white text-xl font-medium font-Euclid">Withdraw</span></figure>
+                        </section>
+    
+                        <section id="Date">
+                          <span class="w-40 text-white text-xl font-medium font-Euclid">28.08.2023 10:02</span>
+                        </section>
+    
+                        <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M2.67256 12.7132C2.52604 12.4975 2.45278 12.3897 2.41177 12.2234C2.38097 12.0985 2.38097 11.9015 2.41177 11.7766C2.45278 11.6103 2.52604 11.5025 2.67256 11.2868C3.88334 9.50484 7.48734 5 12.9796 5C18.4719 5 22.0759 9.50484 23.2867 11.2868C23.4332 11.5025 23.5065 11.6103 23.5475 11.7766C23.5783 11.9015 23.5783 12.0985 23.5475 12.2234C23.5065 12.3897 23.4332 12.4975 23.2867 12.7132C22.0759 14.4952 18.4719 19 12.9796 19C7.48734 19 3.88335 14.4952 2.67256 12.7132Z" stroke="white" stroke-opacity="0.2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M12.9796 15C14.7622 15 16.2072 13.6569 16.2072 12C16.2072 10.3431 14.7622 9 12.9796 9C11.1971 9 9.75204 10.3431 9.75204 12C9.75204 13.6569 11.1971 15 12.9796 15Z" stroke="white" stroke-opacity="0.2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                          
+                      </figure>
+                      <figure class="w-[1404px] h-[79px] bg-neutral-900 rounded-2xl flex items-center gap-24 py-7 pl-9">
+                          
+                        <section id="Plan" class="flex items-center">
+                            <svg width="45" height="44" viewBox="0 0 45 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <g clip-path="url(#clip0_46_303)">
+                              <path d="M20.277 31.167C20.8552 31.4194 21.4794 31.5496 22.1103 31.5496C22.7412 31.5496 23.3654 31.4194 23.9436 31.167" stroke="#BEF264" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M22.1103 5.5C13.5596 5.5 8.55098 9.7735 7.69664 15.7575C6.83949 21.2846 8.15337 26.9291 11.3633 31.5095C12.9082 33.7678 14.9053 35.6807 17.2281 37.1268C20.2825 38.9602 23.9455 38.9602 26.9998 37.1268C29.3226 35.6807 31.3198 33.7678 32.8646 31.5095C36.0616 26.9233 37.3742 21.2841 36.5313 15.7575C35.677 9.77167 30.6683 5.5 22.1176 5.5H22.1103Z" stroke="#BEF264" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M14.777 20.167L18.4436 23.8337" stroke="#BEF264" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M29.4436 20.167L25.777 23.8337" stroke="#BEF264" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                              </g>
+                              <defs>
+                              <clipPath id="clip0_46_303">
+                              <rect width="44" height="44" fill="white" transform="translate(0.110352)"/>
+                              </clipPath>
+                              </defs>
+                            </svg>
+                            <section>
+                              <p class="text-white/[0.56] text-sm font-normal font-Euclid">ALN</p>
+                              <p class="text-white text-sm font-normal font-Euclid">ALIEN PLAN</p>
+                            </section>                              
+                        </section>
+    
+                        <section id="Amount" class="flex gap-1 text-center ml-[81px]">
+                          <p class="text-white text-xl font-normal font-Euclid">2.355</p>
+                          <p class="text-blue-500 text-xl font-normal font-Euclid">RUB</p>
+                        </section>
+    
+                        <section id="Status" class="space-x-2 ml-[135px]">
+                          <figure class="w-36 h-11 bg-emerald-400 rounded-2xl justify-center items-center inline-flex"><span class="text-white text-xl font-medium font-Euclid">Confirm</span></figure>
+                          <figure class="w-36 h-11 bg-blue-500 rounded-2xl justify-center items-center inline-flex"><span class="text-white text-xl font-medium font-Euclid">Withdraw</span></figure>
+                        </section>
+    
+                        <section id="Date">
+                          <span class="w-40 text-white text-xl font-medium font-Euclid">28.08.2023 10:02</span>
+                        </section>
+    
+                        <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M2.67256 12.7132C2.52604 12.4975 2.45278 12.3897 2.41177 12.2234C2.38097 12.0985 2.38097 11.9015 2.41177 11.7766C2.45278 11.6103 2.52604 11.5025 2.67256 11.2868C3.88334 9.50484 7.48734 5 12.9796 5C18.4719 5 22.0759 9.50484 23.2867 11.2868C23.4332 11.5025 23.5065 11.6103 23.5475 11.7766C23.5783 11.9015 23.5783 12.0985 23.5475 12.2234C23.5065 12.3897 23.4332 12.4975 23.2867 12.7132C22.0759 14.4952 18.4719 19 12.9796 19C7.48734 19 3.88335 14.4952 2.67256 12.7132Z" stroke="white" stroke-opacity="0.2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M12.9796 15C14.7622 15 16.2072 13.6569 16.2072 12C16.2072 10.3431 14.7622 9 12.9796 9C11.1971 9 9.75204 10.3431 9.75204 12C9.75204 13.6569 11.1971 15 12.9796 15Z" stroke="white" stroke-opacity="0.2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                          
+                      </figure>
+                      
+                    </section>
+                  </section>
+                </section>
+    
+              </section>
+    
+            </section>
         </section>
+        <section id="Subscription" class="bg-[#1515156B]/[0.42] rounded-[16px] space-y-8 w-[780px] h-[600px] mt-24 flex flex-col justify-center hidden">
+        </section>
+        
 
       </section>
   </main>
