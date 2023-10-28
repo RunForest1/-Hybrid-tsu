@@ -12,7 +12,21 @@
 
   <header class="container my-6">
     <nav class="flex justify-between items-center gap-52">
-      <a href="#" id="logo" class="bg-gray-500 w-[240px] h-[55px] rounded-[12px] flex justify-center items-center text-Euclid">Logo</a>
+      <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 54 54" fill="none">
+        <circle cx="27" cy="27" r="27" fill="#000B76"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.4227 25.8178C18.3561 30.9084 24.8552 36.4843 36.7734 13.5C40.8156 7.41124 52.9401 14.5499 50.2776 31.509C48.0675 42.1263 38.6114 50.1063 27.2812 50.1063C14.3112 50.1063 3.79688 39.649 3.79688 26.7492C3.79688 25.0825 3.97239 23.4566 4.30605 21.8887C7.1925 21.3306 9.75022 23.525 12.4227 25.8178Z" fill="url(#paint0_linear_2_931)"/>
+        <path d="M4.28906 21.9286C10.2656 6.92857 18.0703 8.08068 34.8047 17.1424L30.9375 23.7143C29.1797 26.4286 23.1328 35.5617 12.8672 26.7045C7.98394 22.4913 5.34375 21.4524 4.28906 21.9286Z" fill="url(#paint1_linear_2_931)"/>
+        <defs>
+            <linearGradient id="paint0_linear_2_931" x1="34.6567" y1="50.1422" x2="33.2526" y2="27.2404" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#07438D"/>
+                <stop offset="1" stop-color="#008BFF"/>
+            </linearGradient>
+            <linearGradient id="paint1_linear_2_931" x1="21.375" y1="29.9378" x2="22.3183" y2="8.86771" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#0A179C"/>
+                <stop offset="1" stop-color="#061EFD"/>
+            </linearGradient>
+        </defs>
+      </svg>
       <ul class="flex items-center justify-center gap-16">
           <section id="dropdownButton1" class="text-[22px] text-white font-Euclid">
               <button onclick="toggleDropdown1()" href="#" class="flex items-center gap-2">
@@ -1043,9 +1057,9 @@
         </section>
 
 
-        <section id="Settings" class="bg-[#1515156B]/[0.42] rounded-[16px] w-[1600px] h-[945px] my-24 flex flex-col">
-            <section id="Profile" class="hidden">
-                <section class="flex flex-col text-center mt-12">
+        <section id="Settings" class="bg-[#1515156B]/[0.42] rounded-[16px] w-[1600px] h-full my-24 flex flex-col ">
+            <section id="Profile" class="py-16 hidden">
+                <section class="flex flex-col text-center">
                     <p class="font-Euclid text-white text-[36px]">Profile Information</p>
                     <span class="font-Euclid text-gray-400 text-[20]">Update your account information</span>
                 </section>
@@ -1122,11 +1136,11 @@
                 </section>
             </section>
             
-            <section id="Security" class="flex flex-col space-y-5">
+            <section id="Security" class="flex flex-col space-y-5 py-16 hidden">
                 
-                <section class="flex flex-col text-center mt-12">
-                <p class="font-Euclid text-white text-[36px]">Profile Information</p>
-                <span class="font-Euclid text-gray-400 text-[20]">Update your account information</span>
+                <section class="flex flex-col text-center">
+                  <p class="font-Euclid text-white text-[36px]">Profile Information</p>
+                  <span class="font-Euclid text-gray-400 text-[20]">Update your account information</span>
                 </section>
                 <section class="flex justify-center mt-14 space-x-5">
                   <button class="w-[158px] h-[59px] rounded-2xl border  border-blue-500 hover:bg-blue-500 duration-300 group">
@@ -1256,6 +1270,8 @@
                 </section>
                 
                 
+
+              </section>
 
             </section>
 
