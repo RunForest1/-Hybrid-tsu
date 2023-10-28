@@ -8,109 +8,142 @@
     <link href="assets/css/tailwind.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&fEuclidpins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body class="bg-[#0B0C0D] bg-light-pattern bg-no-repeat bg-right-top ">
+<body class="bg-[#0B0C0D] bg-light-pattern bg-no-repeat bg-right-top xxl:bg-small-light-pattern xl:bg-small-light-pattern">
 
+  
   <header class="container my-6">
-    <nav class="flex justify-between items-center gap-52">
-      <a href="#" id="logo" class="bg-gray-500 w-[240px] h-[55px] rounded-[12px] flex justify-center items-center text-Euclid">Logo</a>
-      <ul class="flex items-center justify-center gap-16">
-          <section id="dropdownButton1" class="text-[22px] text-white font-Euclid">
-              <button onclick="toggleDropdown1()" href="#" class="flex items-center gap-2">
-              Features 
-              <svg xmlns="http://www.w3.org/2000/svg" id="drpTarget1" class="duration-300" width="15" height="9" viewBox="0 0 15 9" fill="none">
-              <path d="M1 1L7.5 7L13.5 1" stroke="white" stroke-opacity="0.56" stroke-width="2"/>
-              </svg>
-              </button>
-              <section class="hidden" id="dropdown1" class="absolute">
-                  <menu class="grid grid-cols-2 mt-2 p-6 gap-6 absolute inset-x-[435px] top-[90px] w-[1000px] h-[500px] text-white/[0.56] font-Euclid text-xl bg-neutral-950 border rounded-2xl border-gray-700">
-                      <section class="flex items-center gap-5 ">
-                          <img src="./assets/imgs/feature_icon.svg" alt="">
-                          <section class="space-y-2">
-                              <p class="text-white font-Euclid text-[25px] font-semibold flex justify-start">Feature</p>
-                              <p class="w-[328px] text-white/[0.56] text-xl  font-Euclid">Lorem ispum dolor sit amet lorem isput dolor sit amet</p>
-                          </section>
-                      </section>
-                      <section class="flex items-center gap-5 ">
-                          <img src="./assets/imgs/feature_icon.svg" alt="">
-                          <section class="space-y-2">
-                              <p class="text-white font-Euclid text-[25px] font-semibold flex justify-start">Feature</p>
-                              <p class="w-[328px] text-white/[0.56] text-xl  font-Euclid">Lorem ispum dolor sit amet lorem isput dolor sit amet</p>
-                          </section>
-                      </section>
-                      <section class="flex items-center gap-5 ">
-                          <img src="./assets/imgs/feature_icon.svg" alt="">
-                          <section class="space-y-2">
-                              <p class="text-white font-Euclid text-[25px] font-semibold flex justify-start">Feature</p>
-                              <p class="w-[328px] text-white/[0.56] text-xl  font-Euclid">Lorem ispum dolor sit amet lorem isput dolor sit amet</p>
-                          </section>
-                      </section>
-                      <section class="flex items-center gap-5 ">
-                          <img src="./assets/imgs/feature_icon.svg" alt="">
-                          <section class="space-y-2">
-                              <p class="text-white font-Euclid text-[25px] font-semibold flex justify-start">Feature</p>
-                              <p class="w-[328px] text-white/[0.56] text-xl  font-Euclid">Lorem ispum dolor sit amet lorem isput dolor sit amet</p>
-                          </section>
-                      </section>
-                      <section class="flex items-center gap-5 ">
-                          <img src="./assets/imgs/feature_icon.svg" alt="">
-                          <section class="space-y-2">
-                              <p class="text-white font-Euclid text-[25px] font-semibold flex justify-start">Feature</p>
-                              <p class="w-[328px] text-white/[0.56] text-xl  font-Euclid">Lorem ispum dolor sit amet lorem isput dolor sit amet</p>
-                          </section>
-                      </section>
-                      <section class="flex items-center gap-5 ">
-                          <img src="./assets/imgs/feature_icon.svg" alt="">
-                          <section class="space-y-2">
-                              <p class="text-white font-Euclid text-[25px] font-semibold flex justify-start">Feature</p>
-                              <p class="w-[328px] text-white/[0.56] text-xl  font-Euclid">Lorem ispum dolor sit amet lorem isput dolor sit amet</p>
-                          </section>
-                      </section>
-                      
-                  </menu>
-              </section>
-          </section>
-          <li class="text-[22px] text-white font-Euclid"><a href="#">About Us</a></li>
-          <li class="text-[22px] text-white font-Euclid"><a href="#">Tape</a></li>
-          <section class="" id="dropdownButton">
-              <button onclick="toggleDropdown()" href="#" class="flex items-center gap-2 text-[22px] text-white font-Euclid relative">
-              Resources
-              <svg xmlns="http://www.w3.org/2000/svg" id="drpTarget" class="duration-300" width="15" height="9" viewBox="0 0 15 9" fill="none">
-                  <path d="M1 1L7.5 7L13.5 1" stroke="white" stroke-opacity="0.56" stroke-width="2"/>
-              </svg>
-              </button>
-              <section class="hidden" id="dropdown" class="absolute">
-                  <menu class=" mt-2 absolute flex flex-col justify-center items-start p-5  space-y-2 w-[154px] h-[120px] bg-neutral-950 border rounded-2xl border-gray-700">
-                      <li><a class="text-white/[0.56] font-Euclid text-xl duration-300 hover:text-white" href="#">Support</a></li>
-                      <li><a class="text-white/[0.56] font-Euclid text-xl duration-300 hover:text-white" href="#">FAQs</a></li>
-                      <li><a class="text-white/[0.56] font-Euclid text-xl duration-300 hover:text-white" href="#">Community</a></li>
-                  </menu>
-              </section>
-          </section>
-
-          
-
-      </ul>
-      <button class="flex items-center gap-2">
-        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="9" viewBox="0 0 15 9" fill="none">
-            <path d="M1 1L7.5 7L13.5 1" stroke="white" stroke-opacity="0.56" stroke-width="2"/>
+    <nav class="flex justify-between items-center gap-42">
+        <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 54 54" fill="none">
+            <circle cx="27" cy="27" r="27" fill="#000B76"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.4227 25.8178C18.3561 30.9084 24.8552 36.4843 36.7734 13.5C40.8156 7.41124 52.9401 14.5499 50.2776 31.509C48.0675 42.1263 38.6114 50.1063 27.2812 50.1063C14.3112 50.1063 3.79688 39.649 3.79688 26.7492C3.79688 25.0825 3.97239 23.4566 4.30605 21.8887C7.1925 21.3306 9.75022 23.525 12.4227 25.8178Z" fill="url(#paint0_linear_2_931)"/>
+            <path d="M4.28906 21.9286C10.2656 6.92857 18.0703 8.08068 34.8047 17.1424L30.9375 23.7143C29.1797 26.4286 23.1328 35.5617 12.8672 26.7045C7.98394 22.4913 5.34375 21.4524 4.28906 21.9286Z" fill="url(#paint1_linear_2_931)"/>
+            <defs>
+                <linearGradient id="paint0_linear_2_931" x1="34.6567" y1="50.1422" x2="33.2526" y2="27.2404" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#07438D"/>
+                    <stop offset="1" stop-color="#008BFF"/>
+                </linearGradient>
+                <linearGradient id="paint1_linear_2_931" x1="21.375" y1="29.9378" x2="22.3183" y2="8.86771" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#0A179C"/>
+                    <stop offset="1" stop-color="#061EFD"/>
+                </linearGradient>
+            </defs>
         </svg>
-        <img src="./assets/imgs/profile.png" alt="">
-      </button>
+        <ul class="flex items-center justify-center gap-16 text-[22px] xl:text-[18px] xl:gap-12 md:hidden">
+            <section id="dropdownButton1" class="text-white font-Euclid">
+                <button onclick="toggleDropdown1()" href="#" class="flex items-center gap-2">
+                Features 
+                <svg xmlns="http://www.w3.org/2000/svg" id="drpTarget1" class="duration-300" width="15" height="9" viewBox="0 0 15 9" fill="none">
+                <path d="M1 1L7.5 7L13.5 1" stroke="white" stroke-opacity="0.56" stroke-width="2"/>
+                </svg>
+                </button>
+                <section class="hidden animate-slide-down absolute" id="dropdown1">
+                    <ul class="grid grid-cols-2 mt-2 p-6 gap-6 absolute -left-52 top-8 w-[1000px] h-[500px] xxl:w-[950px] xxl:h-[400px]  text-white/[0.56] font-Euclid text-xl bg-neutral-950 border rounded-2xl border-gray-700">
+                        <section class="flex items-center gap-5 ">
+                            <img src="./assets/imgs/feature_icon.svg" alt="" class="xl:w-20">
+                            <section class="space-y-2">
+                                <p class="text-white font-Euclid text-[25px] xl:text-xl font-semibold flex justify-start">Feature</p>
+                                <p class="w-[328px] text-white/[0.56] text-xl xl:text-sm xl:w-2/3  font-Euclid">Lorem ispum dolor sit amet lorem isput dolor sit amet</p>
+                            </section>
+                        </section>
+                        <section class="flex items-center gap-5 ">
+                            <img src="./assets/imgs/feature_icon.svg" alt="" class="xl:w-20">
+                            <section class="space-y-2">
+                                <p class="text-white font-Euclid text-[25px] xl:text-xl font-semibold flex justify-start">Feature</p>
+                                <p class="w-[328px] text-white/[0.56] text-xl xl:text-sm xl:w-2/3  font-Euclid">Lorem ispum dolor sit amet lorem isput dolor sit amet</p>
+                            </section>
+                        </section>
+                        <section class="flex items-center gap-5 ">
+                            <img src="./assets/imgs/feature_icon.svg" alt="" class="xl:w-20">
+                            <section class="space-y-2">
+                                <p class="text-white font-Euclid text-[25px] xl:text-xl font-semibold flex justify-start">Feature</p>
+                                <p class="w-[328px] text-white/[0.56] text-xl xl:text-sm xl:w-2/3  font-Euclid">Lorem ispum dolor sit amet lorem isput dolor sit amet</p>
+                            </section>
+                        </section>
+                        <section class="flex items-center gap-5 ">
+                            <img src="./assets/imgs/feature_icon.svg" alt="" class="xl:w-20">
+                            <section class="space-y-2">
+                                <p class="text-white font-Euclid text-[25px] xl:text-xl font-semibold flex justify-start">Feature</p>
+                                <p class="w-[328px] text-white/[0.56] text-xl xl:text-sm xl:w-2/3  font-Euclid">Lorem ispum dolor sit amet lorem isput dolor sit amet</p>
+                            </section>
+                        </section>
+                        <section class="flex items-center gap-5 ">
+                            <img src="./assets/imgs/feature_icon.svg" alt="" class="xl:w-20">
+                            <section class="space-y-2">
+                                <p class="text-white font-Euclid text-[25px] xl:text-xl font-semibold flex justify-start">Feature</p>
+                                <p class="w-[328px] text-white/[0.56] text-xl xl:text-sm xl:w-2/3  font-Euclid">Lorem ispum dolor sit amet lorem isput dolor sit amet</p>
+                            </section>
+                        </section>
+                        <section class="flex items-center gap-5 ">
+                            <img src="./assets/imgs/feature_icon.svg" alt="" class="xl:w-20">
+                            <section class="space-y-2">
+                                <p class="text-white font-Euclid text-[25px] xl:text-xl font-semibold flex justify-start">Feature</p>
+                                <p class="w-[328px] text-white/[0.56] text-xl xl:text-sm xl:w-2/3  font-Euclid">Lorem ispum dolor sit amet lorem isput dolor sit amet</p>
+                            </section>
+                        </section>
+                        
+                    </ul>
+                </section>
+            </section>
+            <li class="text-white font-Euclid"><a href="#">About Us</a></li>
+            <li class="text-white font-Euclid"><a href="#">Tape</a></li>
+            <section class="" id="dropdownButton">
+                <button onclick="toggleDropdown()" href="#" class="flex items-center gap-2 text-white font-Euclid relative ">
+                Resources
+                <svg xmlns="http://www.w3.org/2000/svg" id="drpTarget" class="duration-300" width="15" height="9" viewBox="0 0 15 9" fill="none">
+                    <path d="M1 1L7.5 7L13.5 1" stroke="white" stroke-opacity="0.56" stroke-width="2"/>
+                </svg>
+                </button>
+                <section class="hidden animate-slide-down" id="dropdown" class="absolute">
+                    <ul class=" mt-2 absolute flex flex-col justify-center items-start p-5  space-y-2 w-[154px] h-[120px] xl:w-[120px] xl:h-[100px] bg-neutral-950 border rounded-2xl border-gray-700">
+                        <li><a class="text-white/[0.56] font-Euclid text-xl xl:text-sm duration-300 hover:text-white" href="#">Support</a></li>
+                        <li><a class="text-white/[0.56] font-Euclid text-xl xl:text-sm duration-300 hover:text-white" href="#">FAQs</a></li>
+                        <li><a class="text-white/[0.56] font-Euclid text-xl xl:text-sm duration-300 hover:text-white" href="#">Community</a></li>
+                    </ul>
+                </section>
+            </section>
+
+            
+
+        </ul>
+        <button class="flex items-center gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="9" viewBox="0 0 15 9" fill="none">
+              <path d="M1 1L7.5 7L13.5 1" stroke="white" stroke-opacity="0.56" stroke-width="2"/>
+          </svg>
+          <img src="./assets/imgs/profile.png" alt="">
+        </button>
+        <section id="OpenBurger" class="hidden md:block">
+          <button onclick="toggleOpenBurger()" href="#" class="flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" id="drpTarget2" class="duration-500 icon icon-tabler icon-tabler-menu-2 stroke-blue-500" width="64" height="64" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M4 6l16 0"></path>
+                  <path d="M4 12l16 0"></path>
+                  <path d="M4 18l16 0"></path>
+              </svg>
+          </button>
+          <section class="absolute left-0 w-screen h-[100vh] hidden animate-open-menu" id="openburger">
+              <ul class="text-[22px] mt-2 flex flex-col justify-center items-center p-5  space-y-2 border  bg-neutral-950 border-gray-700">
+                  <li class="text-white font-Euclid"><a href="#">Features</a></li>
+                  <li class="text-white font-Euclid"><a href="#">About Us</a></li>
+                  <li class="text-white font-Euclid"><a href="#">Tape</a></li>
+                  <li class="text-white font-Euclid"><a href="#">Resources</a></li>
+                  <li class="text-blue-500 font-Euclid"><a href="#">Log In</a></li>
+              </ul> 
+          </section>
+      </section>
     </nav>
   </header>
-
   <main class="container">
-      <section id="user" class="flex justify-between items-center mt-40">
-          <section class="flex items-center gap-9">
+      <section id="user" class="flex justify-between items-center mt-40 sm:grid grid-cols-1">
+          <section class="flex items-center gap-9 xl:flex flex-col xl:items-start xl:gap-3 sm:mb-9">
               <img src="./assets/imgs/image 1.png" alt="">
               <section class="space-y-[14px]">
                   <span class="font-Euclid text-white text-[32px]">nickname</span>
                   <p class="font-Euclid text-white/[0.56] text-[18px]">Member since 7 weeks ago</p>
-                  <p class="font-Euclid text-white/[0.8] text-[18px] w-[345px]">Lorem ispum dolor sit amet Lorem ispum dolor sit amet Lorem ispum dolor sit amet</p>
+                  <p class="font-Euclid text-white/[0.8] text-[18px] w-[345px] xl:w-[320px]">Lorem ispum dolor sit amet Lorem ispum dolor sit amet Lorem ispum dolor sit amet</p>
               </section>
           </section>
-          <section id="achievements" class="flex items-center justify-center gap-12">
-              <figure class="w-[200px] h-[261px] rounded-2xl bg-[#101113CC]/[0.8] flex flex-col items-center justify-center">
+          <section id="achievements" class="flex items-center justify-center gap-12 xl:gap-6 md:overflow-x-scroll">
+              <figure class="w-[200px] h-[261px] rounded-2xl bg-[#101113CC]/[0.8] flex flex-col items-center justify-center xl:w-[180px] xl:h-[240px]">
                   <svg xmlns="http://www.w3.org/2000/svg" width="110" height="125" viewBox="0 0 110 125" fill="none">
                       <g clip-path="url(#clip0_2_4442)">
                         <path d="M57.5285 103.98C86.3364 103.98 109.69 80.6408 109.69 51.8505C109.69 23.0601 86.3364 -0.279053 57.5285 -0.279053C28.7206 -0.279053 5.36719 23.0601 5.36719 51.8505C5.36719 80.6408 28.7206 103.98 57.5285 103.98Z" fill="#1B1F48" fill-opacity="0.63"/>
@@ -218,7 +251,7 @@
                     <span class="font-Euclid text-blue-500 text-3xl font-bold">2,710</span>
                     <p class="w-[100px] text-white/[0.56] font-Euclid text-center">Total Experience</p>
               </figure>
-              <figure class="w-[200px] h-[261px] rounded-2xl bg-[#101113CC]/[0.8] flex flex-col items-center justify-center">
+              <figure class="w-[200px] h-[261px] rounded-2xl bg-[#101113CC]/[0.8] flex flex-col items-center justify-center xl:w-[180px] xl:h-[240px]">
                   <svg xmlns="http://www.w3.org/2000/svg" width="110" height="125" viewBox="0 0 110 125" fill="none">
                       <g clip-path="url(#clip0_2_4442)">
                         <path d="M57.5285 103.98C86.3364 103.98 109.69 80.6408 109.69 51.8505C109.69 23.0601 86.3364 -0.279053 57.5285 -0.279053C28.7206 -0.279053 5.36719 23.0601 5.36719 51.8505C5.36719 80.6408 28.7206 103.98 57.5285 103.98Z" fill="#1B1F48" fill-opacity="0.63"/>
@@ -326,7 +359,8 @@
                     <span class="font-Euclid text-blue-500 text-3xl font-bold">2,710</span>
                     <p class="w-[100px] text-white/[0.56] font-Euclid text-center">Total Experience</p>
               </figure>
-              <figure class="w-[200px] h-[261px] rounded-2xl bg-[#101113CC]/[0.8] flex flex-col items-center justify-center">
+              
+              <figure class="w-[200px] h-[261px] rounded-2xl bg-[#101113CC]/[0.8] flex flex-col items-center justify-center xl:w-[180px] xl:h-[240px]">
                   <svg xmlns="http://www.w3.org/2000/svg" width="110" height="125" viewBox="0 0 110 125" fill="none">
                       <g clip-path="url(#clip0_2_4442)">
                         <path d="M57.5285 103.98C86.3364 103.98 109.69 80.6408 109.69 51.8505C109.69 23.0601 86.3364 -0.279053 57.5285 -0.279053C28.7206 -0.279053 5.36719 23.0601 5.36719 51.8505C5.36719 80.6408 28.7206 103.98 57.5285 103.98Z" fill="#1B1F48" fill-opacity="0.63"/>
@@ -438,7 +472,7 @@
       </section>
 
       <section id="lvl" class="mt-32">
-          <section class="flex items-center justify-center space-x-1">
+          <section class="flex items-center justify-center space-x-1 xxl:overflow-x-scroll">
               <figure>
                   <svg xmlns="http://www.w3.org/2000/svg" width="66" height="66" viewBox="0 0 66 66" fill="none">
                       <g clip-path="url(#clip0_2_4554)">
@@ -867,33 +901,28 @@
               </figure>
           </section>
           <section class="flex items-center space-x-6">
-            <p class="text-Euclid text-white text-xl w-20">Level 1</p>
+            <p class="text-Euclid text-white text-xl w-20 md:text-xs">Level 1</p>
             <figure class="w-full bg-[#101113CC]/[0.8] rounded-full h-2.5 dark:bg-gray-700">
               <figure class="bg-blue-600 h-2.5 rounded-full" style="width: 30%"></figure>
             </figure>
-            <p class="text-Euclid text-white text-xl w-24">1,100 XP</p>
+            <p class="text-Euclid text-white text-xl w-24 md:text-xs">1,100 XP</p>
           </section>
       </section>
 
-      <section id="profile" class="flex flex-col items-center mt-48">
-        <section class="flex gap-12">
-            <section class="flex flex-col items-center">
-                <button class="font-Euclid text-[36px] text-white">Activity</button>
-                
-              <figure class="bg-blue-500 w-full h-[6px] rounded-xl"></figure>
-            </section>
-
-
+      <section id="activity" class="flex flex-col items-center mt-48">
+        <section>
+          <a href="#" class="font-Euclid text-[36px] text-white">Activity</a>
+          <figure class="bg-blue-500 w-36 h-[6px] rounded-xl"></figure>
         </section>
-       
+
         <section class="bg-[#1515156B]/[0.42] rounded-[16px] space-y-8 w-[780px] h-[600px] mt-24 flex flex-col justify-center">
             <section class="flex justify-center">
               <section class=" w-[701px] h-[374px] bg-blurpost bg-opacity-50 rounded-2xl backdrop-blur-[75px] flex flex-col space-y-4 items-center justify-center">
                 <section class="flex items-center justify-center gap-4">
                   <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
                     <path d="M7.5 10V6C7.5 4.67392 8.02678 3.40215 8.96447 2.46447C9.90215 1.52678 11.1739 1 12.5 1C13.8261 1 15.0979 1.52678 16.0355 2.46447C16.9732 3.40215 17.5 4.67392 17.5 6V10M2.5 12C2.5 10.3431 3.84315 9 5.5 9H19.5C21.1569 9 22.5 10.3431 22.5 12V20C22.5 21.6569 21.1569 23 19.5 23H5.5C3.84315 23 2.5 21.6569 2.5 20V12Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    <span class="font-Euclid text-[36px] text-white">Private Content</span>
+                  </svg>
+                  <span class="font-Euclid text-[36px] text-white">Private Content</span>
                 </section>
                 <p class="font-Euclid text-[20px] text-white text-center w-[416px]">In order to see this content, you need to purchase a <span class="text-blue-500">Level</span> subscription</p>
                 <button class="flex items-center justify-center gap-2 w-[173px] h-[39px] px-[26px] py-[7px] bg-gray-800 rounded-2xl">
@@ -905,7 +934,7 @@
               </section>
             </section>
             <section class="flex items-center justify-between w-full px-10">
-              <section class="flex items-center gap-4" >
+              <section class="flex items-center gap-4">
                 <img src="./assets/imgs/profile.png" alt="" >
                 <p class="font-Euclid text-white text-[20px] ">@creator</p>
               </section>
@@ -939,7 +968,7 @@
         <section class="bg-[#1515156B]/[0.42] rounded-[16px] space-y-8 w-[780px] h-[730px] mt-24 flex flex-col justify-center">
           <section class="flex justify-center">
             <section class=" w-[701px] h-[374px] bg-post bg-opacity-50 rounded-2xl backdrop-blur-[75px] flex flex-col space-y-4 items-center justify-center">
-              
+    
             </section>
           </section>
           <section class="flex items-center justify-between w-full px-10">
